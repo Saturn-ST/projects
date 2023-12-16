@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arimo;
+}
+
+body {
+  background: #ffc803;
+  /*       background-size:cover;
+      background-position: center;
+      background-attachment:fixed; */
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  margin: 3rem 0 .2rem;
+}
+
+.heading h2 {
+  font-size: 1.2rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* Sample Set */
+.flex-container-sample {}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid yellow;
+}
+
+.flex-child:first-child {
+  /*     margin-right: 20px; */
+}
+
+/* Sample Set */
+
+
+
+
+/* Hand 1 */
+/* .flex-container-player1 {
+    display: flex;
+}
+
+.flex-child {
+    flex: 2;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child { */
+/*     margin-right: 20px; */
+/* }  */
+/* Hand 1 */
+
+
+
+/* Hand 2 */
+/* .flex-container-three {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child { */
+/*     margin-right: 20px; */
+/* }  */
+/* Hand 2 */
+
+
+
+#black-card {
+  background-color: #030200;
+  color: #fff;
+}
+
+.card {
+  /*   display:flex; */
+  /*   flex-direction:column; */
+  width: 400px;
+  margin-bottom: 60px;
+  padding: 0px 20px 40px 20px;
+}
+
+.card>div {
+  /*   box-shadow:0 15px 20px 0 rgba(0,0,0,0.5); */
+}
+
+.card-text {
+  margin: -30px auto;
+  /*   margin-bottom:-50px; */
+  width: 240px;
+  height: 332px;
+  background-color: #fff;
+  color: #030200;
+  padding: 40px 30px;
+  border-radius: 6%;
+  border: .1px solid #030200;
+}
+
+.card-body {
+  font-size: 1.1rem;
+}
