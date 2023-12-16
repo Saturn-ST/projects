@@ -1,2 +1,2 @@
 # projects
-First projects to learn front end web development
+Lorem Ipsum generator call the The Word Place themed after The Good Place tv show. No connection. 

@@ -1,2 +1,2 @@
 # projects
-First projects to learn front end web development
+Cards Against Humanity game idea. No connection to the actual game. 
