@@ -1,0 +1,347 @@
+/* design inspiration: https://lipsumator.com/ */
+/* Bad Place Red: #CB0600 */
+/* Green: #6DB866 */
+/* Blue: #0063A1 */
+/* White: #F2EFE7 */
+/* Yellows: #F7E51D 0, #F7D121, #F3C81D 80% */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;1,200&display=swap');
+
+* {
+  margin: auto;
+  padding: auto;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #0063A1;
+  /* blue */
+  background: radial-gradient(circle at center, #F7E51D 0, #F7D121, #F3C81D 80%);
+  /* yellows */
+  text-align: center;
+  font-weight: 400;
+}
+
+/* HEADING SECTION BELLOW */
+.heading {}
+
+h1 {
+  font-weight: 500;
+  width: 100%;
+  margin: 4rem auto 0;
+  color: #0063A1;
+  font-size: 7rem;
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+}
+
+.fine {
+  /* 	width: 100%; */
+  background-color: white;
+  padding: 3rem;
+  background: radial-gradient(circle at center, #F2EFE7 1, #D3C9C7, #6A5343 400%);
+}
+
+h2 {
+  width: 100%;
+  margin: 4rem auto;
+  color: #6DB866;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+/* HEADING SECTION ABOVE */
+
+/* ARTICLE SECTION BELLOW*/
+article {
+  padding: 2rem;
+  color: #F2EFE7;
+  background-color: #6DB866;
+}
+
+.article {
+  width: 40rem;
+  margin: 2rem auto;
+}
+
+h3 {
+  font-size: 3rem;
+  /* 	padding-top: 1em; */
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/* ARTICLE SECTION ABOVE */
+
+/* NAVBAR CODE BELOW */
+header {
+  color: white;
+  background: #0063A1;
+  /*blue*/
+  height: 4em;
+  padding: 1em 2rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.inner {}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 2em;
+  background: #CB0600;
+  padding: .25em .2em .1em;
+}
+
+nav>ul {
+  float: right;
+  list-style-type: none;
+}
+
+nav>ul>li {
+  text-align: center;
+  margin: 1rem;
+}
+
+nav>ul li ul li {}
+
+nav ul li:hover {
+  cursor: pointer;
+  position: relative;
+  color: #F3C81D 80%;
+}
+
+nav ul li:hover>ul {
+  display: block;
+}
+
+nav ul li:hover>a {
+  color: #F3C81D;
+  /* yellow */
+  background-color: #0063A1;
+}
+
+nav>ul>li>a {
+  cursor: pointer;
+  display: block;
+  outline: none;
+  width: 100%;
+  text-decoration: none;
+}
+
+nav>ul>li {
+  float: left;
+}
+
+nav a {
+  color: white;
+}
+
+nav>ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 2000;
+  list-style-type: none;
+}
+
+nav>ul li ul li>a {
+  text-decoration: none;
+}
+
+/* [type="checkbox"],
+label {
+    display: none;
+} */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  /*     label {
+        display: block;
+        background: #222;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    } */
+  /*     label:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #777;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+    } */
+  /*     [type="checkbox"]:checked ~ ul {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+    } */
+  nav a {
+    color: #777;
+  }
+
+  nav ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: left;
+    background: #222;
+    text-indent: 20px;
+  }
+
+  nav>ul>li {
+    margin-left: 0px;
+  }
+
+  nav>ul li ul li {
+    display: block;
+    float: none;
+  }
+
+  nav>ul li ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    float: none;
+  }
+}
+
+/* NAVBAR CODE ABOVE */
+
+/* FORM BELLOW */
+.form {
+  /* border: .2rem solid #6DB866; */
+  background-color: #0063A1;
+  color: white;
+  padding-top: 1.5rem;
+  padding-left: 8px;
+  padding-bottom: .8rem;
+  margin-top: 4rem;
+  width: 55em;
+}
+
+#quantity {
+  background-color: #F2EFE7;
+  border: 1px solid #6DB866;
+  font-size: 1rem;
+  padding: .2rem .3rem;
+}
+
+.labels,
+.generate-btn,
+.copy-btn {
+  color: 0063A1;
+  background-color: white;
+  border: 1px solid #6DB866;
+  font-size: 1rem;
+  padding: .1rem .3rem;
+}
+
+.starts-with {
+  font-size: 1rem;
+  padding: .2rem .1rem .2rem .7rem;
+}
+
+#checkbox {
+  margin-left: 1em;
+  /* outline: 1px solid #6DB866; */
+  /* background-color: #F2EFE7; */
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(2, 2);
+}
+
+/* FORM ABOVE */
+
+
+
+/* GENERATE AREA BELLOW */
+.generate-area {
+  border: .2rem solid #0063A1;
+  height: 40rem;
+  width: 55em;
+  background-color: white;
+  margin: 0 auto 4rem;
+  /* color: #0063A1; */
+}
+
+
+.generate-area p {
+  text-align: left;
+  font-size: .8em;
+  color: #0063A1;
+  padding: 1rem;
+}
+
+/* GENERATE AREA ABOVE */
+
+
+
+/* CLOWN SECTION BELLOW */
+#clown {
+  background-image: url(https://www.singulart.com/images/artworks/pictures/cropped/1391/30775/zoom/serie_30775_329fa7b9436147428612f075e3d95ea8.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.clear {
+  height: 60em;
+}
+
+/* CLOWN SECTION ABOVE */
+
+
+
+/* BLOG SECTION BELLOW */
+.blog-section {
+  background-color: #6DB866;
+  color: #F2EFE7;
+  padding-top: 2rem;
+}
+
+/* BLOG SECTION ABOVE */
+
+footer {
+  background-color: #F3C81D;
+  color: #0063A1;
+  padding: 2rem;
+}
+
+footer a {
+  color: #0063A1;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+footer a:hover {
+  font-weight: 600;
+}
+
+
+
+/* Bad Place Red: #CB0600 */
+/* Green: #6DB866 */
+/* Blue: #0063A1 */
+/* White: #F2EFE7 */
+/* Yellows: #F7E51D 0, #F7D121, #F3C81D 80% */
