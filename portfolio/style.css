@@ -14,6 +14,21 @@ body {
   font-family: Raleway;
   font-weight: 100;
 }
+.fa-github-alt{
+  position: fixed;
+  left: 1em;
+  top: 2em;
+}
+.fa-mug-hot{
+  position: fixed;
+  left: 1em;
+  top: 4em;
+}
+.fa-pencil{
+  position: fixed;
+  left: 1em;
+  top: 6em;
+}
 
 .nav-img {
   max-width: 5rem;
@@ -122,6 +137,8 @@ a:hover {
 .more-button:hover {
   font-weight: 300;
   border: 1.5px solid #DEB992;
+  border-top-right-radius: .5em;
+  border-bottom-left-radius: .5em;
 }
 
 /* CONTACT FORM STYLES */
@@ -166,6 +183,8 @@ input[type=submit] {
 input[type=submit]:hover {
   font-weight: 300;
   border: 1.5px solid #DEB992;
+  border-top-left-radius: .5em;
+  border-bottom-right-radius: .5em;
 }
 
 /* Footer */
@@ -181,6 +200,4 @@ footer {
 social-icons {
   display: block;
   margin: 1rem auto;
-}
-small{
 }
