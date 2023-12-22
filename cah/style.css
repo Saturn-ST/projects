@@ -6,111 +6,95 @@
   box-sizing: border-box;
   font-family: Arimo;
 }
-
 body {
   background: #ffc803;
-  /*       background-size:cover;
-      background-position: center;
-      background-attachment:fixed; */
-}
-
-.heading {
   text-align: center;
 }
+.heading {
+  margin: 3em auto;
 
+}
 .heading h1 {
   font-size: 2.5rem;
-  margin: 3rem 0 .2rem;
 }
-
 .heading h2 {
   font-size: 1.2rem;
 }
-
-.flex-container {
-  display: flex;
-}
-
-/* Sample Set */
-.flex-container-sample {}
-
-.flex-child {
-  flex: 1;
-  border: 2px solid yellow;
-}
-
-.flex-child:first-child {
-  /*     margin-right: 20px; */
-}
-
-/* Sample Set */
-
-
-
-
-/* Hand 1 */
-/* .flex-container-player1 {
-    display: flex;
-}
-
-.flex-child {
-    flex: 2;
-    border: 2px solid yellow;
-}  
-
-.flex-child:first-child { */
-/*     margin-right: 20px; */
-/* }  */
-/* Hand 1 */
-
-
-
-/* Hand 2 */
-/* .flex-container-three {
-    display: flex;
-}
-
-.flex-child {
-    flex: 1;
-    border: 2px solid yellow;
-}  
-
-.flex-child:first-child { */
-/*     margin-right: 20px; */
-/* }  */
-/* Hand 2 */
-
-
-
-#black-card {
-  background-color: #030200;
-  color: #fff;
-}
-
 .card {
-  /*   display:flex; */
-  /*   flex-direction:column; */
-  width: 400px;
-  margin-bottom: 60px;
-  padding: 0px 20px 40px 20px;
-}
-
-.card>div {
-  /*   box-shadow:0 15px 20px 0 rgba(0,0,0,0.5); */
-}
-
-.card-text {
-  margin: -30px auto;
-  /*   margin-bottom:-50px; */
+  display: inline-block;
   width: 240px;
   height: 332px;
   background-color: #fff;
   color: #030200;
   padding: 40px 30px;
-  border-radius: 6%;
-  border: .1px solid #030200;
+  border-radius: 1.1rem;
+  text-align: left;
+  /* margin-bottom: 10rem; */
+  border: .1px solid #e0d7a9;
+
+}
+.blk-card { /* this modifies .card */
+  background-color: #030200;
+  color: #fff;
+}
+.rules {
+  text-align: left;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: #1d204c;
+  position: fixed;
+  left: 0;
+  top: 25%;
+  width: 15%;
+  color: white;
+  font-size: .8rem;
+}
+.results{
+  width: 80%;
+  margin: auto;
 }
 
-.card-body {
-  font-size: 1.1rem;
+.vt-answer-card{
+  position: relative;
+  bottom: 10rem; /* off-setting by the # of pixels*/
 }
+
+.sample-blk, .sample-wht{
+  position: relative;
+}.sample-blk{
+  left: 1rem;
+}.sample-wht{
+  right: 1rem;
+  top: .1rem;
+}
+
+
+
+/* Player Hand */
+.hand{
+  margin-bottom: 5em;
+  margin-left: 2.8em;
+  margin-right: 0;
+  padding: 0;
+}
+.hand-card2{
+  position: relative;
+  right: 3rem;
+  top: .2rem;
+}.hand-card3{
+  position: relative;
+  right: 6rem;
+  top: .4rem;
+
+}.hand-card4{
+  position: relative;
+  right: 9rem;
+  top: .6rem;
+
+}.hand-card5{
+  position: relative;
+  right: 12rem;
+  top: .8rem;
+
+}
+/* Player Hand */
