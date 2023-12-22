@@ -41,13 +41,15 @@ body {
   text-align: left;
   border: 1px solid black;
   padding: 1em;
-  background-color: #1d204c;
+  /* background-color: rgba(29, 32, 76, .3); */
   position: fixed;
   left: 0;
   top: 25%;
   width: 15%;
-  color: white;
+  /* color: white; */
   font-size: .8rem;
+  border: 1px solid black;
+  border-radius: 1.1rem;
 }
 .results{
   width: 80%;
@@ -72,12 +74,11 @@ body {
 
 /* Player Hand */
 .hand{
-  margin-bottom: 5em;
-  margin-left: 2.8em;
-  margin-right: 0;
-  padding: 0;
+  margin: 5em 0 5em 2.8em;
+  padding: 4em 0;
+  position: relative;
 }
-.hand-card2{
+/* .hand-card2{
   position: relative;
   right: 3rem;
   top: .2rem;
@@ -96,5 +97,16 @@ body {
   right: 12rem;
   top: .8rem;
 
+} */
+
+.hand .card:hover{
+  position: absolute;
+  right: 50%;
+  top: 5%;
 }
+
 /* Player Hand */
+
+.symbol:hover{
+  font-weight: bold;
+}
