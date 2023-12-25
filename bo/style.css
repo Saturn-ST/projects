@@ -7,7 +7,9 @@ body, html {
   font-family: 'Open Sans', sans-serif;  
   letter-spacing: .1rem;
   font-weight: 300;
-
+}
+body{
+    background-color: #ccffff;
 }
 
 /* HERO SECTION  */
@@ -15,8 +17,8 @@ body, html {
     font-size: 3rem;
     margin: 0;
     text-align: center;
+    color: white;
 }
-
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://scontent-lax3-2.xx.fbcdn.net/v/t31.18172-8/10630575_1671195823124455_5354963964125931140_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=w06XgwAV4rYAX8LAGtY&_nc_ht=scontent-lax3-2.xx&oh=00_AfDFwdKWYM3-567fMXrqwZdcN-DQX9xdlgQEMwVkdZmQvw&oe=65AEF0BD");
   height: 100%;
@@ -25,16 +27,14 @@ body, html {
   background-size: cover;
   position: relative;
 }
-
 .hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(244, 255, 255);
 }
-
 .hero-text button {
   border: none;
   outline: 0;
@@ -45,29 +45,39 @@ body, html {
   text-align: center;
   cursor: pointer;
 }
-
 .hero-text button:hover {
   background-color: #555;
-  color: white;
+  color: rgb(244, 255, 255);
 }
 
+/* HORIZONTAL RULE SECTIONS  */
 
 
-/* BIOGRAPHY SECTION  */
-.bio-container{
+/* FOCUS SECTION  */
+.focus-container{
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: stretch;
+    background-color: white;
+    color: #000;
 }
-.bio{
-    padding: 2rem 10rem;
-    /* margin: 0 5rem; */
-    font-size: .85em;
+.focus-txt .header{
+    color: #000;
 }
-.bio-img{
-    width: 40%;
+.focus-txt{
+    margin: 2rem auto;
+    width: 25rem;
+    font-size: 1em;
+}
+#foc-img-box{
+    height: 30rem;
+    margin: auto;
+    border: 1px solid #ccffff;
+}
+#foc-img-box img{
+    height: 100%;
 }
 
 
@@ -75,12 +85,17 @@ body, html {
 
 /* RESEARCH SECTION  */
 .research-container{
-    background-color: rgb(204, 255, 255);
+    background-color: white;
     padding: 4rem 5rem;
-    color: #535353;
+    color: black;
 }
-h3 {
+.research-container .header {
+    color: black;
+    margin-bottom: 2rem;
+}
+.research h3 {
     margin: 0;
+    color: black;
 }
 .research{
     display: flex;
@@ -89,21 +104,6 @@ h3 {
     justify-content: center;
     gap: 1rem;
 }
-.research .research-box:nth-child(2){
-    max-width: 25rem;
-}
-.research .research-box:nth-child(4){
-    max-width: 25rem;
-}
-.research .research-box:nth-child(5){
-    max-width: 25rem;
-}
-.research img{
-    max-width: 13rem;
-    /* border: 1px solid rgba(83, 83, 83, 0.233); */
-    padding-bottom: 0;
-
-}
 .research p{
     font-size: .8rem;
 }
@@ -111,17 +111,47 @@ h3 {
 max-width: 13rem;
 padding: 1rem 2rem;
 }
-
-
+.rsch-img-box{
+    height: 8em;
+    max-width: 15em;
+}
+.rsch-img-box.one{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image002.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.rsch-img-box.two{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image006.jpg");
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.rsch-img-box.three{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://cdn.shopify.com/s/files/1/0109/9779/2831/files/sierpinski_pentagon_480x480.png?v=1667495868");
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.rsch-img-box.four{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image008.jpg");
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.rsch-img-box.five{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image010.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 
 
 
 /* GENERAL SECTION  */
 .general-container{
-    background-color: #000;
+    background-color: #fff;
     padding: 4rem 5rem;
-    color: rgb(204, 255, 255);
+    color: #000;
 }
 .general{
     display: flex;
@@ -130,11 +160,13 @@ padding: 1rem 2rem;
     justify-content: center;
     gap: 1rem;
 }
+.gen.header{
+    color: #000;
+}
 .general img{
     max-width: 13rem;
     /* border: 1px solid rgba(83, 83, 83, 0.233); */
     padding-bottom: 0;
-
 }
 .general p{
     font-size: .8rem;
@@ -143,32 +175,58 @@ padding: 1rem 2rem;
 max-width: 25rem;
 padding: 1rem 2rem;
 }
-
-
-
+.gen-img-box{
+    height: 10em;
+    max-width: 25em;
+}
+.gen-img-box.one{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image012.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.gen-img-box.two{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/page0007_files/image001.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.gen-img-box.three{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://images.unsplash.com/photo-1623781760608-1bf656943368?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.gen-img-box.four{
+    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image016.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 
 
 /* SITE FOOTER SECTION  */
 .site-footer{
-    display: flex;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
 }
-
-
+.ft-flex{
+    display: flex;
+    padding-left: 10em;
+}
+.site-footer ul{
+    text-align: left;
+}
+.site-footer ul li:first-child{
+    font-weight: bold;
+}
 .site-footer li{
 list-style-type: none;
 }
 .site-footer a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
-
-
-/* TOP NAVIGATION SECTION  */
-.top-nav{
-    /* padding: 1rem; */
-}
-.nav-menu-img-temp{
-    /* width: 30px; */
+.ft.header{
+    flex-align: start;
+    text-align: left;
 }
