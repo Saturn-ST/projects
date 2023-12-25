@@ -12,6 +12,24 @@ body{
     background-color: #ccffff;
 }
 
+.btn-container{
+display: flex;
+}
+button.view-mr-btn{
+    display: block;
+    background-color:rgba(0, 0, 0, 0);
+    margin: auto;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+}   
+button.view-mr-btn a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
 /* HERO SECTION  */
 .header{
     font-size: 3rem;
@@ -26,6 +44,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
+
 }
 .hero-text {
   text-align: center;
@@ -48,12 +68,6 @@ body{
 .hero-text button:hover {
   background-color: #555;
   color: rgb(244, 255, 255);
-}
-
-/* SECTION DIVIDERS  */
-.section-divider{
-    height: 5px;
-
 }
 
 /* FOCUS SECTION  */
@@ -83,7 +97,20 @@ body{
     height: 100%;
 }
 
+/* BACKGROUND IMAGE SECTION  */
+.back-img-container{
+    height: 25rem;
+}
+div.back-img{
+    background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://s3.amazonaws.com/cms.ipressroom.com/173/files/20166/5776dcc42cfac219cc009ee9_Remain+rally+chalk+slogans/Remain+rally+chalk+slogans_a6ee09d9-b5e8-40b9-8767-fa1a025492c1-prv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
 
+}
 
 
 /* RESEARCH SECTION  */
@@ -119,32 +146,55 @@ padding: 1rem 2rem;
     max-width: 15em;
 }
 .rsch-img-box.one{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image002.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image002.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .rsch-img-box.two{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image006.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image006.jpg");
     /* background-image: url(""); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .rsch-img-box.three{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://cdn.shopify.com/s/files/1/0109/9779/2831/files/sierpinski_pentagon_480x480.png?v=1667495868");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://cdn.shopify.com/s/files/1/0109/9779/2831/files/sierpinski_pentagon_480x480.png?v=1667495868");
     /* background-image: url(""); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .rsch-img-box.four{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image008.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image008.jpg");
     /* background-image: url(""); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .rsch-img-box.five{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.5), rgba(204, 255, 255, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image010.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image010.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+
+
+/* VIDEO SECTION */
+.video-section{
+    background-color: rgb(242, 242, 242);
+    padding: 2rem 0;
+}
+.video-section .header{
+    color: #000;
+}
+.vd-flex{
+    display: flex;
+}
+.vd-container{
+    align-items: center;
+    margin: auto;
+}
+.video-section iframe{
+    width: 21.5rem;
+    height: 12.09375rem;
+    padding: 2rem;
 }
 
 
@@ -183,22 +233,22 @@ padding: 1rem 2rem;
     max-width: 25em;
 }
 .gen-img-box.one{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image012.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.3), rgba(242, 242, 242, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image012.jpg");
 background-repeat: no-repeat;
 background-size: 100%;
 }
 .gen-img-box.two{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/page0007_files/image001.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.3), rgba(242, 242, 242, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/page0007_files/image001.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .gen-img-box.three{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://images.unsplash.com/photo-1623781760608-1bf656943368?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.3), rgba(242, 242, 242, .3)), url("https://images.unsplash.com/photo-1623781760608-1bf656943368?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .gen-img-box.four{
-    background-image: linear-gradient(rgba(204, 255, 255, 0.3), rgba(204, 255, 255, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image016.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0.3), rgba(242, 242, 242, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image016.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
