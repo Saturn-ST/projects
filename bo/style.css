@@ -12,6 +12,7 @@ body{
     background-color: #ccffff;
 }
 
+/* BUTTONS SECTION  */
 .btn-container{
 display: flex;
 }
@@ -29,6 +30,30 @@ button.view-mr-btn a{
     font-size: 1.2em;
 }
 
+/* NAVIGATION SECTION  INSIDE HERO*/
+.nav-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 2rem;
+}
+.nav-container ul{
+display: flex;
+gap: 2rem;
+.home-btn{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+}
+.nav-container li{
+    list-style: none;
+}
+.nav-container a{
+    color: #fff;
+    text-decoration: none;
+}
 
 /* HERO SECTION  */
 .header{
@@ -102,7 +127,7 @@ button.view-mr-btn a{
     height: 25rem;
 }
 div.back-img{
-    background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://s3.amazonaws.com/cms.ipressroom.com/173/files/20166/5776dcc42cfac219cc009ee9_Remain+rally+chalk+slogans/Remain+rally+chalk+slogans_a6ee09d9-b5e8-40b9-8767-fa1a025492c1-prv.jpg");
+    background-image: linear-gradient(rgba(242, 242, 242, 0), rgba(242, 242, 242, 0)), url("https://s3.amazonaws.com/cms.ipressroom.com/173/files/20166/5776dcc42cfac219cc009ee9_Remain+rally+chalk+slogans/Remain+rally+chalk+slogans_a6ee09d9-b5e8-40b9-8767-fa1a025492c1-prv.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -179,7 +204,7 @@ padding: 1rem 2rem;
 /* VIDEO SECTION */
 .video-section{
     background-color: rgb(242, 242, 242);
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 .video-section .header{
     color: #000;
