@@ -50,8 +50,11 @@ body{
   color: rgb(244, 255, 255);
 }
 
-/* HORIZONTAL RULE SECTIONS  */
+/* SECTION DIVIDERS  */
+.section-divider{
+    height: 5px;
 
+}
 
 /* FOCUS SECTION  */
 .focus-container{
