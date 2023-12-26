@@ -82,7 +82,7 @@ a {
 
 a:hover {
   /* color: #DEB992; */
-  font-weight: 300;
+  /* font-weight: 300; */
   text-decoration: none;
 }
 
@@ -101,29 +101,27 @@ a:hover {
 }
 
 /* PROJECTS */
-.project-section {
+.project-section{
 }
-
-.project {
+.project{
   display: inline-block;
   width: 32%
 }
-
 .project-name {
-  /* font-size: 1.3rem; */
+  font-weight: 400;
 }
-
 .project-img {
-  height: 210px;
-  width: 400px;
-  opacity: .90;
+  height: 190px;
+  width: 350px;
+  opacity: .80;
+  margin: 1rem auto;
+  transition: 2s;
 }
-
 .project-img:hover {
   opacity: 1;
 }
 
-.more-button {
+.more-btn {
   background-color: black;
   font-weight: 100;
   color: #DEB992;
@@ -132,25 +130,27 @@ a:hover {
   border-radius: 4px;
   cursor: pointer;
   margin: 2rem auto;
+  transition: 1s;
 }
 
-.more-button:hover {
+.more-btn:hover {
   font-weight: 300;
-  border: 1.5px solid #DEB992;
-  border-top-right-radius: .5em;
-  border-bottom-left-radius: .5em;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.more-btn:active{
+  background-color: #DEB992;
+  color: #000;
 }
 
 /* CONTACT FORM STYLES */
 .form {
   width: 20em;
 }
-
 label {
   display: block;
   text-align: left;
 }
-
 input[type=text],
 input[type=tel],
 input[type=email],
@@ -165,10 +165,6 @@ textarea {
   resize: vertical;
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-#message{
-  ;
-}
-
 input[type=submit] {
   background-color: black;
   font-weight: 100;
@@ -178,14 +174,18 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 2rem;
+  transition: 1s;
 }
-
 input[type=submit]:hover {
   font-weight: 300;
-  border: 1.5px solid #DEB992;
-  border-top-left-radius: .5em;
-  border-bottom-right-radius: .5em;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
+input[type=submit]:active {
+  background-color:#DEB992;
+  color: #000;
+}
+
 
 /* Footer */
 footer {
