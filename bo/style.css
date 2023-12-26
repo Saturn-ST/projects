@@ -164,6 +164,10 @@ div.back-img{
     justify-content: center;
     gap: 1rem;
 }
+.research a{
+    color: #000;
+    text-decoration: none;
+}
 .research p{
     font-size: .8rem;
 }
@@ -179,29 +183,39 @@ padding: 1rem 2rem;
     background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image002.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}.rsch-img-box.one:hover{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image002.jpg");
 }
 .rsch-img-box.two{
     background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image006.jpg");
     /* background-image: url(""); */
     background-repeat: no-repeat;
     background-size: 100%;
+}.rsch-img-box.two:hover{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image006.jpg");
 }
 .rsch-img-box.three{
     background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://cdn.shopify.com/s/files/1/0109/9779/2831/files/sierpinski_pentagon_480x480.png?v=1667495868");
     /* background-image: url(""); */
     background-repeat: no-repeat;
     background-size: 100%;
+}.rsch-img-box.three:hover{
+    background-image: url("https://cdn.shopify.com/s/files/1/0109/9779/2831/files/sierpinski_pentagon_480x480.png?v=1667495868");
 }
 .rsch-img-box.four{
     background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image008.jpg");
     /* background-image: url(""); */
     background-repeat: no-repeat;
     background-size: 100%;
+}.rsch-img-box.four:hover{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image008.jpg");
 }
 .rsch-img-box.five{
     background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, .5)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image010.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}.rsch-img-box.five:hover{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image010.jpg");
 }
 
 
@@ -225,6 +239,9 @@ padding: 1rem 2rem;
     width: 21.5rem;
     height: 12.09375rem;
     padding: 2rem;
+    mask-image: linear-gradient(rgba(242, 242, 242, 0.7), rgba(242, 242, 242, 0.7));
+}.video-section iframe:hover{
+    mask-image: none;
 }
 
 
@@ -242,6 +259,10 @@ padding: 1rem 2rem;
     align-items: flex-start;
     justify-content: center;
     gap: 1rem;
+}
+.general a{
+    color: #000;
+    text-decoration: none;
 }
 .gen.header{
     color: #000;
@@ -267,20 +288,33 @@ padding: 1rem 2rem;
 background-repeat: no-repeat;
 background-size: 100%;
 }
+.gen-img-box.one:hover{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image012.jpg");
+}
 .gen-img-box.two{
     background-image: linear-gradient(rgba(242, 242, 242, 0.3), rgba(242, 242, 242, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/page0007_files/image001.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.gen-img-box.two:hover{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/page0007_files/image001.jpg");
+
 }
 .gen-img-box.three{
     background-image: linear-gradient(rgba(242, 242, 242, 0.3), rgba(242, 242, 242, .3)), url("https://images.unsplash.com/photo-1623781760608-1bf656943368?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.gen-img-box.three:hover{
+    background-image: url("https://images.unsplash.com/photo-1623781760608-1bf656943368?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==");
+}
 .gen-img-box.four{
     background-image: linear-gradient(rgba(242, 242, 242, 0.3), rgba(242, 242, 242, .3)), url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image016.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.gen-img-box.four:hover{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image016.jpg");
 }
 
 
@@ -355,16 +389,48 @@ width: 40rem;
     background-image: none;
 }
 .article-img figcaption{
-    font-size: .8em;
+    font-weight: 700;
+    font-size: .8rem;
+    width: 30rem;
+
 }
 .foc-img-box.article{
     height: 100vw;
+    position: relative;
+
 }
 .article-img{
     background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image002.jpg");
     height: 100%;
     background-position: right;
+    padding-right: 50px;
     background-repeat: no-repeat;
     position: relative;
     background-attachment: fixed;
+    overflow: hidden;
+}
+.article-img.posters{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image012.jpg");
+}
+
+/* POSTER PAGES SECTION  */
+.posters-img-flex{
+    height: 100vw;
+    position: relative;
+}
+.posters-img-flex.article-img{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/image002.jpg");
+    height: 100%;
+    background-position: right;
+    padding-right: 50px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.posters-img-flex.article-img.posters-1a{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/posters/process_files/image002.gif");
+}
+.posters-img-flex.article-img.posters-1b{
+    background-image: url("https://www.sscnet.ucla.edu/polisci/faculty/boneill/index_files/posters/process_files/image002.gif");
 }
