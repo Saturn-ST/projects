@@ -10,6 +10,9 @@ body {
   background: #ffc803;
   text-align: center;
 }
+h3{
+  font-size: 3em;
+}
 .heading {
   margin: 3em auto;
 
@@ -31,26 +34,39 @@ body {
   text-align: left;
   /* margin-bottom: 10rem; */
   border: .1px solid #e0d7a9;
-
+}
+.card:hover{
+  box-shadow: 5px 5px 5px rgba(21, 20, 18, 0.294);
 }
 .blk-card { /* this modifies .card */
   background-color: #030200;
   color: #fff;
 }
-.rules {
-  text-align: left;
-  border: 1px solid black;
-  padding: 1em;
-  /* background-color: rgba(29, 32, 76, .3); */
-  position: fixed;
-  left: 0;
-  top: 25%;
-  width: 15%;
-  /* color: white; */
-  font-size: .8rem;
-  border: 1px solid black;
-  border-radius: 1.1rem;
+
+/* SAMPLE SECTION  */
+.sample{
+  height: 80vh;
 }
+
+
+/* DECKS SECTION  */
+.decks-container{
+  height: 80vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.decks-btn-container{
+  display: flex;
+}
+
+
+
+
+
+
 .results{
   width: 80%;
   margin: auto;
@@ -65,49 +81,171 @@ body {
   position: relative;
 }.sample-blk{
   left: 1rem;
+  transform: rotate(-5deg);
 }.sample-wht{
   right: 1rem;
   top: .1rem;
+  transform: rotate(5deg);
 }
 
 
 
-/* Player Hand */
-.hand{
-  margin: 5em 0 5em 2.8em;
+/* PLAYER HAND SECTION */
+.card.two {
+  display: inline-block;
+  width: 240px;
+  height: 332px;
+  background-color: #fff;
+  color: #030200;
+  padding: 40px 30px;
+  border-radius: 1.1rem;
+  text-align: left;
+  /* margin-bottom: 10rem; */
+  border: .1px solid #e0d7a9;
+  transition: transform .5s, box-shadow .7s;
+}
+.hand.two{
+  margin: 5em auto;
   padding: 4em 0;
-  position: relative;
-  transition: 1s;
 }
-/* .hand-card2{
-  position: relative;
-  right: 3rem;
-  top: .2rem;
-}.hand-card3{
-  position: relative;
-  right: 6rem;
-  top: .4rem;
-
-}.hand-card4{
-  position: relative;
-  right: 9rem;
-  top: .6rem;
-
-}.hand-card5{
-  position: relative;
-  right: 12rem;
-  top: .8rem;
-
-} */
-
-.hand .card:hover{
-  position: absolute;
-  right: 50%;
-  top: 5%;
+.set{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.card.two:hover{
+  box-shadow: 5px 5px 5px rgba(21, 20, 18, 0.294);
+}
+.card.two:active{
+  box-shadow: 5px 5px 5px rgba(21, 20, 18, 0.8);
 }
 
-/* Player Hand */
+.two.hand-card1{
+  transform: rotate(-10deg) translate(14rem, 2.5rem);
+  transform-origin: bottom right;
+}
+.two.hand-card1:hover{
+  transform: rotate(0deg) translate(8rem, .5rem);
+}
 
+.two.hand-card2{
+transform: translate(7rem, .5rem);
+}
+.two.hand-card2:hover{
+  transform: translate(2rem, .5rem);
+}
+
+.two.hand-card3{
+  transform: rotate(5deg);
+  transform-origin: bottom left;
+}
+.two.hand-card3:hover{
+  transform: rotate(0deg) translate(-4rem);
+  transform-origin: bottom left;
+}
+
+.two.hand-card4{
+  transform: rotate(10deg) translate(-7rem, 1.5rem);
+  transform-origin: bottom left;
+}
+.two.hand-card4:hover{
+  transform: rotate(0deg) translate(-11rem, 1.5rem);
+  transform-origin: bottom left;
+}
+
+.two.hand-card5{
+  transform: rotate(15deg) translate(-14rem, 4.5rem);
+  transform-origin: bottom left;
+}
+.two.hand-card5:hover{
+  transform: rotate(0deg) translate(-14rem, 4.5rem);
+}
+
+
+
+/* FINAL SECTION  */
 .symbol:hover{
   font-weight: bold;
+}
+
+/* RULES SECTION  */
+/* Eventually put a close button in the corner and have to box turn into a small tab that can be clicked on */
+.rules {
+  text-align: left;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: #ffc803;
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 15%;
+  /* color: white; */
+  font-size: .8rem;
+  border: 1px solid black;
+  border-radius: 1.1rem;
+}
+.rules:hover{
+  box-shadow: 2px 2px 2px rgba(21, 20, 18, 0.294);
+}
+.rules a{
+  padding: .2rem;
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-size: .6rem;
+  font-weight: 800;
+}
+.rules a:hover{
+  background-color: #000;
+  color: #ffc803;
+}
+.rules a:active{
+  background-color: #ffc803;
+  color: white;
+}
+.rules-tab{
+  text-align: center;
+  border: 1px solid black;
+  padding: .2rem .5rem;
+  background-color: #ffc803;
+  position: fixed;
+  left: 0;
+  top: 35%;
+  border-radius: .6rem;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  margin: .5rem;
+}
+.rules-tab h3{
+  font-size: 1rem;
+}
+.rules-tab:hover{
+  box-shadow: -2px 2px 2px rgba(21, 20, 18, 0.294);
+}
+.rules-tab:active{
+  background-color: #000;
+  color: #ffc803;
+}
+
+
+/* FOOTER SECTION  */
+footer{
+  background-color: #000;
+  color: #ffc803;
+  height: 25vh;
+  padding: 2rem;
+  font-size: .7em;
+}
+footer li{
+  list-style: none;
+  padding: .5rem 0;
+}
+footer a{
+  color: #ffc803;
+  text-decoration: none;
+}
+footer li:nth-child(3){
+  
 }
