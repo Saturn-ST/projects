@@ -9,39 +9,55 @@
 </head>
 
 <body>
-
-    <div class="hero-image">
+    <section class="top-section">
+        <!-- LOGO & SEARCH SECTION -->
+        <div class="logo-box">
+            <ul>
+                <li><a href="">Barry O'Neill</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <!-- <li>
+                <search>
+                    <form action="./search/">
+                        <label style="font-size: .8rem;font-family: Raleway, sans-serif" for="search">Search</label>
+                        <input class="search-bar" type="search" id="search" name="q" placeholder="Search" />
+                        <div class="btn-container"><button id="search-btn" type="submit">Search</button></div>
+                    </form>
+                </search>
+            </li> -->
+            </ul>
+        </div>
+        <!-- NAVIGATION SECTION -->
+        <hr>
         <nav class="nav-container">
             <ul>
-                <li><a class="home-btn" href="index.html">Home</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Focus</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Lectures</a></li>
-                <li><a href="#">General</a></li>
+                <li><a href="">Peace and <br>War</a></li>
+                <li><a href="">Game Theory <br>Basics</a></li>
+                <li><a href="">Negotiation and <br>conflict resolution</a></li>
+                <li><a href="">Voting, Governance of <br>International Orgs</a></li>
+                <li><a href="">Historical Myths <br>on Public Policy</a></li>
             </ul>
         </nav>
-        <div class="hero-text">
-            <h1 class="header">Barry O'Neill</h1>
-            <p>UCLA Political Science Dept.</p>
-            <search>
-                <form action="./search/">
-                    <!-- <label for="search">Search</label> -->
-                    <input class="search-bar" type="search" id="search" name="q" placeholder="Search" />
-                    <!-- <div class="btn-container">
-<button id="search-btn" type="submit">Search</button>
-</div> -->
-                </form>
-            </search>
+        <hr>
         </div>
-    </div>
+        <nav class="nav-container">
+            <ul>
+                <li><a href="">Israeli Election <br>Posters, 1999</a></li>
+                <li><a href="">Culture, Pipes. <br>Songs, Stories, Et Al</a></li>
+                <li><a href="">My Background</a></li>
+            </ul>
+        </nav>
+        <hr>
+        </div>
+    </section>
 
 
     <!-- FOCUS SECTION  -->
     <div class="focus-container">
         <div class="focus-txt">
-            <h2 class="header">Focus</h2>
+            <h1 class="header">Barry O'Neill</h1>
+            <p style="font-weight: 500;">UCLA - Political Science Dept.</p>
             <p>I study decision-making in social contexts. My main work uses game theory to study the prevention of war.
                 My approach views the international system as a society, and considers honour, prestige, face, norms, et
                 al.</p>
@@ -57,15 +73,19 @@
                 src="https://scontent-lax3-2.xx.fbcdn.net/v/t31.18172-8/132199_477028286501_6979822_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=be3454&_nc_ohc=xgUJqDS8AsUAX-FzA8A&_nc_ht=scontent-lax3-2.xx&oh=00_AfA9tpQ2tms9YzFedpjTm3u2JfmZAJ5PGm4bhzcN0xsM6A&oe=65AED15E">
         </div>
     </div>
+    <hr>
 
     <!-- BACKGROUND IMAGE SECTION -->
-    <div class="back-img-container">
+    <!-- <div class="back-img-container">
         <div class="back-img"></div>
-    </div>
+    </div> -->
 
     <!-- RESEARCH SECTION -->
     <div class="research-container">
-        <h2 class="header">Research</h2>
+        <div class="rsch-heading">
+            <h2 class="header">RESEARCH</h2>
+            <p style="font-size: 1.5rem;">My research and papers.</p>
+        </div>
         <div class="research">
 
             <div class="research-box">
@@ -106,38 +126,62 @@
             </div>
         </div>
         <!-- RESEARCH BUTTON  -->
-        <div class="btn-container">
-            <button class="view-mr-btn">
-                <a href="#">View More</a>
-            </button>
-        </div>
-
+        <ul class="cauroseldot">
+            <li><a href="#"><i class="fa-solid fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-circle"></i></a></li>
+        </ul>
     </div>
 
 
 
     <!-- VIDEO SECTION  -->
     <div class="video-section">
-        <h2 class="header">Lectures</h2>
-        <div class="vd-flex">
-            <div class="vd-container">
-                <iframe src="https://www.youtube.com/embed/eM_iQ6ByDng?si=LsOtyJxjxHvnVbSJ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/WJi4vvpAesA?si=9I2jEVVX9_tci77y" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/d6S9H2SNJYA?si=WKHWbAwn41pkSo4K" title="YouTube video player"
-                    frameborder="0"
+        <h2 class="header">VIDEOS</h2>
+        <p style="font-size: 1.5rem;">Find me around the web.</p>
+
+        <div class="vid-container">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eM_iQ6ByDng?si=6R4-oahnVlCSm2rg"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
+            <div>
+                <h3 class="header">This Is The Title Of The Video</h3>
+                <p>This is a description of the video. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                    aut totam dolore incidunt hic, praesentium quis culpa veritatis quasi accusantium obcaecati,
+                    molestias iure laborum qui amet maxime quia cumque. Iste.</p>
+            </div>
         </div>
-        <div class="btn-container">
-            <button class="view-mr-btn"><a href="#">View More</a></button>
+        <div class="vid-container">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WJi4vvpAesA?si=XqRvbZdzk1WSVgwl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <h3 class="header">This Is The Title Of The Video</h3>
+                <p>This is a description of the video. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                    aut totam dolore incidunt hic, praesentium quis culpa veritatis quasi accusantium obcaecati,
+                    molestias iure laborum qui amet maxime quia cumque. Iste.</p>
+            </div>
         </div>
+        <div class="vid-container">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d6S9H2SNJYA?si=aCAclUReyOHhxRjO"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <h3 class="header">This Is The Title Of The Video</h3>
+                <p>This is a description of the video. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                    aut totam dolore incidunt hic, praesentium quis culpa veritatis quasi accusantium obcaecati,
+                    molestias iure laborum qui amet maxime quia cumque. Iste.</p>
+            </div>
+        </div>
+
     </div>
 
 
@@ -211,6 +255,11 @@
         </div>
         <small class="ft-sm">Made with &#10084; by <a href="#">Sarah Turner</a></small>
     </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/efa6c20d3e.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
