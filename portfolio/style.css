@@ -1,46 +1,223 @@
 /* design inspiration: https://slumber.fm/ */
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;1,200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;1,200&display=swap'); */
 
-* {
-  margin: auto;
-  padding: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Proza+Libre&display=swap');
+/* font-family: 'Kalam', cursive;      Primary */
+/* font-family: 'Proza Libre', sans-serif;     accent*/
 
 body {
-  color: #DEB992;
-  background-color: black;
+  font-family: 'Kalam', cursive;
   font-weight: 100;
-  text-align: center;
-  font-family: Raleway;
-  font-weight: 100;
+  text-align: left;
+  background-color: #AF1230;
+  margin: 0;
+  padding: 0;
 }
-.fa-github-alt{
-  position: fixed;
+
+/* ----- FIRST HALF OF WEBSITE */
+.main-top {
+  height: 100vh;
+  width: 100%;
+  color: #000;
+  background-color: #FBFBFB;
+}
+
+/*----HERO SECTION -----*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 7rem;
+  font-weight: 100;
+  line-height: 7rem;
+  transform: rotate(-6deg) translate(4rem, -5rem);
+  text-shadow: 3px 3px 3px #DEAEAA;
+}
+
+.img-container {
+  background-image: url("https://th.bing.com/th/id/OIG.SRpuRBYx6_939lfbWRR4?pid=ImgGn");
+  width: 35rem;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0 auto;
+  top: 0;
+  height: 500px;
+  background-position: center;
+  */
+}
+
+.hero-subtittle {
+  transform: rotate(-6deg) translate(-4rem, 3rem);
+}
+
+.hero h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 100;
+  text-shadow: 3px 3px 3px #DEAEAA;
+  margin: 0;
+  padding: 3rem 0 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0;
+  margin: 0;
+  text-shadow: 3px 3px 3px #DEAEAA;
+
+}
+
+
+/* ---- CONTACT ICONS SECTION ----*/
+.fa-github-alt {
+  /* position: fixed; */
   left: 1em;
   top: 2em;
 }
-.fa-mug-hot{
-  position: fixed;
+
+.fa-mug-hot {
+  /* position: fixed; */
   left: 1em;
   top: 4em;
 }
-.fa-pencil{
-  position: fixed;
+
+.fa-pencil {
+  /* position: fixed; */
   left: 1em;
   top: 6em;
 }
 
-.nav-img {
-  max-width: 5rem;
-  margin: auto 5rem;
+
+
+/* ---- SKILLS AND EXPERTISE ---- */
+.skills {
+  background-color: #E9C1B5;
+  /* height: 100vh; */
+  padding: 2rem 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
-h1 {
+.skills h2 {
   font-size: 5rem;
+  line-height: 5rem;
   font-weight: 100;
-  border-top: .3px solid #deb992;
-  width: 70%;
-  padding-top: 2rem;
+  color: #000;
+  text-shadow: 3px 3px 3px #fff;
+  margin: 0;
+  padding: 3rem 0 0;
+  transform: rotate(-6deg) translate(-4rem, 3rem);
+
+}
+
+.skills ul {
+  font-family: 'Proza Libre';
+  display: flex;
+  flex-direction: column;
+}
+
+.skills ul:first-of-type li:first-child {
+  line-height: 3.5rem;
+
+}
+
+.skills ul li:first-child {
+  font-weight: 900;
+}
+
+.skills ul li {
+  line-height: 5rem;
+  font-size: 1.6rem;
+}
+
+/* LEGO SECTION */
+.set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.lego {
+  display: block;
+  width: 246px;
+  height: 46px;
+  background-color: #fff;
+  color: #030200;
+  padding: 40px 30px;
+  margin: 0;
+  text-align: left;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #000;
+  border-radius: 2px;
+  top: 8px;
+  position: relative;
+}
+
+.lego p {
+  font-family: 'Proza Libre';
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.bits {
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+
+.bit {
+  width: 40px;
+  height: 15px;
+  display: block;
+  background: #FED602;
+  position: relative;
+  float: left;
+  margin: 0 10px 0 22px;
+  border-radius: 2px 2px 0 0;
+}
+
+.hand-lego1 {
+  background: #F7D237;
+}
+
+.hand-lego2 {
+  background: #1E63AF;
+  color: #fff;
+}
+
+.hand-lego3 {
+  background-color: #E44E27;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* ---- ABOUT ME SECTION ----*/
+.about-me {
+  background-color: #000;
+  width: 100%;
+}
+
+.about {
+  width: 60%;
+  margin-bottom: 3em;
 }
 
 h2 {
@@ -48,6 +225,8 @@ h2 {
   font-weight: 200;
   padding-top: 2rem;
 }
+
+
 
 h3 {
   font-size: 2.5rem;
@@ -60,7 +239,7 @@ h4 {
   font-weight: 200;
 }
 
-.drop-aline{
+.drop-aline {
   display: inline-block;
   margin: 3em 4em;
 }
@@ -71,24 +250,19 @@ li {
 }
 
 ul li a {
-  color: #DEB992;
+  color: #fff;
   font-weight: 100;
 }
 
 a {
-  color: #DEB992;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  /* color: #DEB992; */
+  /* color: #fff; */
   /* font-weight: 300; */
   text-decoration: none;
-}
-
-.about {
-  width: 60%;
-  margin-bottom: 3em;
 }
 
 .tech {
@@ -97,19 +271,21 @@ a:hover {
   padding: 1rem;
   background: black;
   font-weight: 300;
-  color: #DEB992;
+  color: #fff;
 }
 
 /* PROJECTS */
-.project-section{
-}
-.project{
+.project-section {}
+
+.project {
   display: inline-block;
   width: 32%
 }
+
 .project-name {
   font-weight: 400;
 }
+
 .project-img {
   height: 190px;
   width: 350px;
@@ -117,6 +293,7 @@ a:hover {
   margin: 1rem auto;
   transition: 2s;
 }
+
 .project-img:hover {
   opacity: 1;
 }
@@ -124,9 +301,9 @@ a:hover {
 .more-btn {
   background-color: black;
   font-weight: 100;
-  color: #DEB992;
+  color: #fff;
   padding: .25rem 2em;
-  border: 1px solid #DEB992;
+  border: 1px solid #fff;
   border-radius: 4px;
   cursor: pointer;
   margin: 2rem auto;
@@ -138,19 +315,22 @@ a:hover {
   box-shadow: 2px 2px 5px rgba(222, 185, 146, 0.5);
   transform: translate(0.1rem, -0.1rem);
 }
-.more-btn:active{
-  background-color: #DEB992;
+
+.more-btn:active {
+  background-color: #fff;
   color: #000;
 }
 
 /* CONTACT FORM STYLES */
 .form {
-  width: 20em;
+  width: 100%;
 }
+
 label {
   display: block;
   text-align: left;
 }
+
 input[type=text],
 input[type=tel],
 input[type=email],
@@ -158,42 +338,51 @@ select,
 textarea {
   background-color: black;
   width: 20rem;
-  border: 1px solid #DEB992;
+  border: 1px solid #fff;
   border-radius: 4px;
   box-sizing: border-box;
   /* Make sure that padding and width stays in place */
   resize: vertical;
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
 input[type=submit] {
   background-color: black;
   font-weight: 100;
-  color: #DEB992;
+  color: #fff;
   padding: .25rem 2em;
-  border: 1px solid #DEB992;
+  border: 1px solid #fff;
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 2rem;
   transition: box-shadow .15s, transform .2s;
 }
+
 input[type=submit]:hover {
   font-weight: 300;
   box-shadow: 2px 2px 5px rgba(222, 185, 146, 0.5);
   transform: translate(0.1rem, -0.1rem);
 }
+
 input[type=submit]:active {
-  background-color:#DEB992;
+  background-color: #fff;
   color: #000;
 }
+
+
+
+
+
 /* Footer */
 footer {
-  border-top: .3px solid #deb992;
+  border-top: .3px solid #fff;
   width: 70%;
   padding-top: 2rem;
   font-weight: 100;
   margin: 3em auto;
 
 }
+
 .social-icons {
   display: block;
   margin: 1rem auto;
