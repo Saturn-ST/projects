@@ -21,6 +21,10 @@ body{
     color: #000;
     font-weight: 100;
 }
+.body-section .navbar, .body-section-profile .navbar{
+    font-size: 1.1rem;
+    padding-top: 2rem;
+}
 
 /* NAVIGATION BAR SECTION  */
 .navbar{
@@ -63,11 +67,10 @@ body{
 margin-bottom: 5rem;
 margin-left: 3rem;
 }
-input{
+.name-form input{
     background-color: #000;
     color: #fff;
     height: 2rem;
-    width: 20rem;
 }
 ::placeholder{
     color: #fff;
@@ -100,7 +103,59 @@ input{
 .poem-section .poem ul li{
     line-height: 2.1rem;
 }
-
+.poem-section label{
+    display: flex;
+    flex-direction: column;
+}
 span{
     padding-right: 3rem;
+}
+.poem-section button{
+    border: none;
+    background-color: #EDEBE6;
+    font-size: large;
+}
+.poem ul li:nth-child(18){
+text-align: right;
+}
+.poem-form input{
+    background-color: #000;
+    color: #fff;
+    height: 4rem;
+    width: 30rem;
+}
+
+
+/* ----- PROFILE PAGE ----- */
+.body-section-profile{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    font-weight: 100;
+}
+
+
+.mypoetry-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+
+}
+.mypoetry-section h2{
+    font-size: 1rem;
+}
+.mypoetry-section ul{
+    list-style-type: none;
+    border: 1px solid #EDEBE6;
+    width: 30rem;
+    padding: 1rem;
+}
+a{
+text-decoration: none;   
+color: inherit; 
 }

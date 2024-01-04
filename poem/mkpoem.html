@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>pantoum - poem</title>
 </head>
 <body>
     <main class="body-section">
@@ -14,11 +14,21 @@
         </ul>
         <ul>
             <li><a href="mkpoem.html">write a poem</a></li>
-            <li>my poems</li>
+            <li><a href="profile.html">my poems</a></li>
             <li>favorites</li>
             <li>| logout</li>
         </ul>
     </nav>
+
+    <section class="type">
+        <ul> <!-- when an option is selected is changes the form to that style of poetry -->
+            <li><a href="">style a</a></li>
+            <li><a href="">style b</a></li>
+            <li><a href="">style c</a></li>
+            <li><a href="">style d</a></li>
+            <li><a href="">style e</a></li>
+        </ul>
+    </section>
 
 
 <section class="poem-section">
@@ -75,6 +85,7 @@
                 <label for="l16"><span>Line 16 |</span> Write whatever you want: <span></span>
                     <input type="text" name="l16" id="l16" placeholder="Line 16">
                 </label>
+                <button><a href="">Save</a></button>  <!-- pressing the save button should record poem to your profile -->
             </form>
         </div>
         <div class="poem">
@@ -96,6 +107,7 @@
                 <li>line 14</li>
                 <li>line 15</li>
                 <li>line 16</li>
+                <li>by First Middle Last 2024</li>
             </ul>
         </div>
 </section>
