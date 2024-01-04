@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body{
+    font-family: 'Libre Baskerville', serif;
+    /* background-image: linear-gradient(rgba(51, 51, 49, 0.1), rgba(1, 180, 235, 0.5)), url("https://images.unsplash.com/photo-1610448721583-d6cb481c9613?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background-image: linear-gradient(rgba(51, 51, 49, 0.1), rgba(1, 180, 235, 0.5)), url("https://source.unsplash.com/random");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+
+}
+.body-section{
+    background-color: #EDEBE6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #000;
+    font-weight: 100;
+}
+
+/* NAVIGATION BAR SECTION  */
+.navbar{
+    margin: 0 auto;
+    padding: 2rem auto 8rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* text-shadow: .5px .5px .5px #1417df; */
+    font-size: 1.3rem;
+}
+.navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+.navbar a:hover{
+    text-shadow: .5px .5px .5px #d9ff04;
+}
+.navbar a:active{
+    text-shadow: .5px .5px .5px #04ff3f;
+}
+.navbar ul:nth-of-type(1){
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.navbar ul:nth-of-type(2){
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0 1rem .5rem 1rem;
+    border-bottom: 1px solid #fff;
+}
+.empty{
+    height: 80vh;
+}
+
+/* NAME AND YEAR SECTION  */
+.name-form{
+margin-bottom: 5rem;
+margin-left: 3rem;
+}
+input{
+    background-color: #000;
+    color: #fff;
+    height: 2rem;
+    width: 20rem;
+}
+::placeholder{
+    color: #fff;
+}
+
+/* POETRY SECTION  */
+.poem-section{
+    /* background-color: #EDEBE6; */
+    /* color: #000; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 5rem 0;
+}
+.poem-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: stretch; 
+    gap: 2rem;
+    padding-bottom: 15rem;
+}
+.poem-section .poem ul{
+    list-style-type: none;
+    position: fixed;
+    right: 0;
+    top: 6rem;
+    width: 20rem;
+}
+.poem-section .poem ul li{
+    line-height: 2.1rem;
+}
+
+span{
+    padding-right: 3rem;
+}
