@@ -11,21 +11,15 @@
 <body>
     <section class="top-section">
         <!-- LOGO & SEARCH SECTION -->
-        <div class="logo-box">
-            <ul>
+        <div class="logo-box">        
+        <ul>
                 <li><a href="">Barry O'Neill</a></li>
             </ul>
-            <ul>
+            <ul class="contact">
                 <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <!-- <li>
-                <search>
-                    <form action="./search/">
-                        <label style="font-size: .8rem;font-family: Raleway, sans-serif" for="search">Search</label>
-                        <input class="search-bar" type="search" id="search" name="q" placeholder="Search" />
-                        <div class="btn-container"><button id="search-btn" type="submit">Search</button></div>
-                    </form>
-                </search>
-            </li> -->
+                        <li><a href=""><i class="fa-solid fa-square-envelope"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-square-phone"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
             </ul>
         </div>
         <!-- NAVIGATION SECTION -->
@@ -52,6 +46,7 @@
         <hr>
         </div>
     </section>
+    </div>
 
 
     <!-- FOCUS SECTION  -->
@@ -83,7 +78,7 @@
 
     <!-- RESEARCH SECTION -->
     <div class="research-container">
-        <div class="rsch-heading">
+        <div class="heading">
             <h2 class="header">RESEARCH</h2>
             <p style="font-size: 1.5rem;">My research and papers.</p>
         </div>
@@ -96,15 +91,15 @@
                     <p>Published papers on Peace and War.</p>
                 </a>
             </div>
-            <div class="hr"><hr></div> <!-- TRY TO FIGURE OUT THAT GRAY LINE BETWEEN THE IMAGES -->
-            <div class="research-box">
+            <div class="hr"></div>
+           <div class="research-box">
                 <a href="#">
                     <div class="rsch-img-box two"></div>
                     <h4>Negotiation and conflict resolution</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </a>
             </div>
-            <div class="hr"><hr></div> <!-- TRY TO FIGURE OUT THAT GRAY LINE BETWEEN THE IMAGES -->
+            <div class="hr"></div>
             <div class="research-box">
                 <a href="#">
                     <div class="rsch-img-box three"></div>
@@ -112,7 +107,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </a>
             </div>
-            <div class="hr"><hr></div> <!-- TRY TO FIGURE OUT THAT GRAY LINE BETWEEN THE IMAGES -->
+            <div class="hr"></div>
             <div class="research-box">
                 <a href="#">
                     <div class="rsch-img-box four"></div>
@@ -120,7 +115,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </a>
             </div>
-            <div class="hr"><hr></div> <!-- TRY TO FIGURE OUT THAT GRAY LINE BETWEEN THE IMAGES -->
+            <div class="hr"></div>
             <div class="research-box">
                 <a href="#">
                     <div class="rsch-img-box five"></div>
@@ -129,7 +124,7 @@
                 </a>
             </div>
         </div>
-        <!-- RESEARCH BUTTON  -->
+        <!-- RESEARCH DOTS  -->
         <ul class="cauroseldot">
             <li><a href="#"><i class="fa-solid fa-circle"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-circle"></i></a></li>
@@ -140,9 +135,10 @@
 
     <!-- VIDEO SECTION  -->
     <div class="video-section">
-        <h2 class="header">VIDEOS</h2>
-        <p style="font-size: 1.5rem;">Find me around the web.</p>
-
+        <div class="heading">
+            <h2 class="header">VIDEOS</h2>
+            <p style="font-size: 1.5rem;">Find me around the web.</p>
+        </div>
         <div class="vid-container">
             <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/eM_iQ6ByDng?si=6R4-oahnVlCSm2rg"
@@ -196,7 +192,11 @@
 
     <!-- GENERAL SECTION -->
     <div class="general-container">
-        <h2 class="gen header">General</h2>
+        <div class="heading">
+            <h2 class="gen header">General</h2>
+            <p>My general intersts.</p>
+        </div>
+
         <div class="general">
             <div class="general-box">
                 <a href="posters.html">
@@ -206,6 +206,7 @@
                         dolorum quod suscipit et consequatur perspiciatis non, </p>
                 </a>
             </div>
+            <div class="hr"></div>
             <div class="general-box">
                 <a href="#">
                     <div class="gen-img-box two"></div>
@@ -213,6 +214,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </a>
             </div>
+            <div class="hr"></div>
             <div class="general-box">
                 <a href="#">
                     <div class="gen-img-box three"></div>
@@ -221,6 +223,7 @@
                         perspiciatis non, </p>
                 </a>
             </div>
+            <div class="hr"></div>
             <div class="general-box">
                 <a href="#">
                     <div class="gen-img-box four"></div>
@@ -230,14 +233,20 @@
                 </a>
             </div>
         </div>
+        <ul class="cauroseldot">
+            <li><a href="#"><i class="fa-solid fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-circle"></i></a></li>
+        </ul>
+    </div>
 
 
 
 
     <!-- SITE FOOTER SECTION -->
     <footer class="site-footer">
+                    <!-- <h2 class="ft header">Barry<br>O'Neill</h2> -->
+
         <div class="ft-flex">
-            <h2 class="ft header">Barry<br>O'Neill</h2>
             <ul>
                 <li><a href="#">Research:</a></li>
                 <li><a href="peace.html">Peace and War</a></li>
@@ -254,8 +263,9 @@
                 <li><a href="#">My background</a></li>
             </ul>
         </div>
-        <hr>
-        <small class="ft-sm">Made with &#10084; by <a href="#">Sarah Turner</a></small>
+        <div class="ft-bottom">
+        <small class="ft-sm">Made with <i class="fa-solid fa-heart" id="ft-heart"></i> by <a href="#">Sarah Turner</a></small>
+    </div>
     </footer>
 
 
