@@ -39,6 +39,8 @@ li a{
     width: 6rem;
     background-position: top;
     background-size: 100%;
+    border-radius: .6rem;
+    box-shadow: 3px 1px 15px #ED0000, -3px -1px 15px #ED0000;
 }
 
 
@@ -71,6 +73,7 @@ li a{
 .hero-left button{
     background-color: #080607;
     border: none;
+    color: #fff;
     margin: 0;
     padding: .4rem 1.5rem;
 }
@@ -231,11 +234,28 @@ button{
 }
 
 /* PAGE FOOTER SECTION  */
-.site-footer{
+/* .site-footer{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4em;
     background-color: #080607;
     margin: 0;
-}
+} */
+
+footer {
+    text-align: center;
+    background-color: #080607;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  
+  footer a:hover {
+    font-weight: 600;
+  }
