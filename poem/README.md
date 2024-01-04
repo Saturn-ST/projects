@@ -4,5 +4,5 @@ Website concept:
 Answer the question or insert your idea in the box and see your poem update on the left. 
 See others' work and save to favorites. 
 
-Created starter html and css. Will continue to add as my skills are refined. 
+Created starter html and css. Will continue to add as my skills improve. 
 
