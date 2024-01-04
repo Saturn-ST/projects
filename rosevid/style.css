@@ -6,7 +6,7 @@ body{
 
 /* NAVIGATION SECTION  */
 nav{
-    background-color: #086366;
+    background-color: #080607;
     padding: 1rem 8rem;
     display: flex;
     justify-content: space-between;
@@ -14,6 +14,8 @@ nav{
 nav ul{
     display: flex;
     margin: 0;
+    gap: 2rem;
+    align-items: center;
 }
 nav ul:first-child{
     font-size: 24px;
@@ -23,14 +25,20 @@ nav ul:first-child{
     color: inherit
     font-size: 0.8rem;
 }
-
 nav ul li{
     list-style: none;
 }
 li a{
     text-decoration: none;
     color: #F9FAF8;
-
+}
+.logo-container{
+    background-image: url("rosevid-logo.jpeg");
+    background-repeat: no-repeat;
+    height: 3rem;
+    width: 6rem;
+    background-position: top;
+    background-size: 100%;
 }
 
 
@@ -40,7 +48,8 @@ li a{
 /* HERO SECTION  */
 .hero{
     display: flex;
-    background-color: #086366;
+    background-color: #fff;
+    color: #000;
     justify-content: center;
     align-items: center;
     padding: 4rem 0;
@@ -50,87 +59,114 @@ li a{
     align-items: center;
     width: 20rem;
 }
-.hero-left h1{
+.hero-left h1, h2{
     font-size: 48px;
     font-weight: bold;
     margin: 0;
 }
 .hero-left p{
-    color: #E5E7B;
+    /* color: #E5E7B; */
     font-size: 15px;
 }
 .hero-left button{
-    background-color: #3882F6;
+    background-color: #080607;
     border: none;
     margin: 0;
     padding: .4rem 1.5rem;
 }
 .hero-img-container{
-    background-image: url("https://th.bing.com/th/id/R.36e9f01d2843e4b367be31f02a07b02b?rik=1yYw4%2fvmifbbVA&riu=http%3a%2f%2fwww.sin.ie%2fwp-content%2fuploads%2f2020%2f10%2fschitts-creek.png&ehk=XJQCZSaLDL8eYOuG7EUxkC3GcSjhljx4KIB4%2f%2bfK1Pc%3d&risl=&pid=ImgRaw&r=0");
+    /* background-image: url("https://th.bing.com/th/id/R.36e9f01d2843e4b367be31f02a07b02b?rik=1yYw4%2fvmifbbVA&riu=http%3a%2f%2fwww.sin.ie%2fwp-content%2fuploads%2f2020%2f10%2fschitts-creek.png&ehk=XJQCZSaLDL8eYOuG7EUxkC3GcSjhljx4KIB4%2f%2bfK1Pc%3d&risl=&pid=ImgRaw&r=0"); */
+    /* background-image: url("https://thumbs.dreamstime.com/b/vhs-video-casette-vector-illustration-retro-vintage-140383816.jpg") ; */
+    background-image: url("https://static.independent.co.uk/2022/11/02/11/vhs-stores.jpg?quality=75&width=990&crop=3%3A2%2Csmart&auto=webp");
     width: 24rem;
     height: 16rem;
     background-size: 100%;
     background-position: top;
+    /* transform: rotate(-15deg); */
 }
 
 
 /* INFORMATION SECTION  */
 .boxes-section{
-    background-color: #6C2C58;
+    background-color: rgba(137, 12, 1, 0.9);
     margin: 0;
     padding: 0;
     color: #1F2927;
     text-align: center;
+    color: #fff;
 }
 .boxes{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     padding-bottom: 4rem;
 }
+
+.img-and-desc{
+    width: 12rem;
+}
 .info-header{
-    font-size: 36px;
-    border: none;
-    padding: 3rem 0;
+    padding: 4rem 0 2rem;
     margin: 0;
-    font-weight: extra-bold;
-    color: #fff;
 }
 
 .release-img-container{
     height: 18rem;
-    width: 12rem;
+    /* width: 12rem; */
     border-radius: 10px;
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
+    box-shadow: 1px 1px 5px #000;
+    margin-bottom: 1rem;
 }
 .release-img-container.one{
     background-image: url("https://i.redd.it/7zl1by28l1161.jpg");
 }
 .release-img-container.two{
     background-image: url("https://static.wikia.nocookie.net/schitts-creek/images/4/4f/Sunrisebay.jpeg/revision/latest?cb=20200316024507");
+    height: 14.5rem;
 }
 .release-img-container.three{
     background-image: url("https://ih1.redbubble.net/image.2625686901.7480/flat,750x1000,075,f.jpg");
+    height: 14.5rem;
 }
 .release-img-container.four{
     background-image: url("https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/515swiKlG0L._AC_UF894,1000_QL80_.jpg");
 }
 
+.dot-container{
+    display: flex;
+    gap: .4rem;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    margin: auto;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+.dot.two{
+    background-color: #b8b8b8;
+}
 
 .boxes p{
-    width: 8rem;
-    color: #757678;
+    /* width: 8rem; */
+    color: #fff;
     margin: 0;
-    padding-bottom: 1rem;
+    font-size: smaller;
+    /* padding-bottom: 1rem; */
 }
 
 
 /* QUOTE SECTION  */
 .quote-container{
-    background-color: #DEB042;
+    background-color: #fff;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
@@ -151,7 +187,6 @@ blockquote{
 
 }
 .quote-footer{
-    background-color: #E5E7EB;
     font-weight: bold;
     color: #1F2937;
     /* padding: 0; */
@@ -166,10 +201,10 @@ blockquote{
     align-items: center;
     justify-content: center;
     padding: 4rem;
-    background-color: #B26978;
+    background-color: #F4D400;
 }
 .call-to-action{
-    background-color: #3882F6;
+    background-color: #080607;
     border-radius: 10px;
     display: flex;
     padding: 1em 5em;
@@ -189,9 +224,9 @@ blockquote{
 button{
     border: 2px solid #F9FAF8;
     border-radius: 5px;
-    background-color: #3882F6;
+    background-color: #F9FAF8;
     padding: 0 1rem;
-    color: #F9FAF8;
+    color: #000;
     margin: 1.2rem .8rem;
 }
 
@@ -201,6 +236,6 @@ button{
     align-items: center;
     justify-content: center;
     height: 4em;
-    background-color: #086366;
+    background-color: #080607;
     margin: 0;
 }
