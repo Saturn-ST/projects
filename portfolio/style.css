@@ -1,7 +1,7 @@
 /* design inspiration: https://slumber.fm/ */
 /* @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;1,200&display=swap'); */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Proza+Libre&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Proza+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@900&family=Raleway:wght@100;200&display=swap');
 /* font-family: 'Kalam', cursive;      Primary */
 /* font-family: 'Proza Libre', sans-serif;     accent*/
@@ -13,8 +13,16 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  /* BACKGROUND LINES  */
+  background: 
+  linear-gradient(-20deg, transparent 0, transparent 597.5px, #018C7F 997.5px, #ccc 602.5px, transparent 602.5px, transparent 1200px),
+  linear-gradient(-20deg, transparent 0, transparent 107.5px, #ccc 107.5px, #ccc 112.5px, transparent 112.5px, transparent 1200px);
+background-size: 1200px 1200px;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 li {
   display: inline-block;
   font-size: .90em;
@@ -23,14 +31,18 @@ li {
 /*----HERO SECTION -----*/
 .fname {
   font-family: 'Poppins', sans-serif;
-  font-size: 17rem;
-  line-height: 17rem;
+  font-size: 19rem;
+  line-height: 19rem;
   font-weight: 900;
   margin: 2rem auto 0;
-  padding: 2rem 0;
+  padding: 0 0 2rem;
   font-family: 'Poppins', sans-serif;
   text-shadow: 3px 3px 3px #DEAEAA;
   transform: rotate(-3deg) translate(1rem, -1rem);
+}
+span, a:hover {
+  font-family: 'Kalam', cursive;
+  line-height: 1em;
 }
 
 .fname span,
@@ -40,24 +52,24 @@ li {
 
 .lname {
   font-family: 'Poppins', sans-serif;
-  font-size: 15rem;
+  font-size: 19rem;
   font-weight: 900;
   margin: 0 auto;
   padding: 0;
-  line-height: 15rem;
-  font-family: 'Poppins', sans-serif;
-  transform: rotate(2deg) translate(1rem, -5rem);
+  line-height: 19rem;
+  transform: rotate(2deg) translate(2rem, -5rem);
   text-shadow: 3px 3px 3px #DEAEAA;
 }
 
-.hero-subtittle ul {
+.hero-subtittle ul, h3 {
   font-family: 'Fira Sans', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
-  gap: 2rem;
+  justify-content: space-around;
   font-size: 2rem;
+  background-color: #F3E7DC;
+
 }
 
 /* ---- ABOUT ME SECTION ----*/
@@ -65,11 +77,11 @@ li {
 .about-me {
   display: flex;
   justify-content: space-evenly;
-  padding: 10rem 0;
+  padding: 7rem 0;
 }
 
 .about-me p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   display: flex;
   align-items: center;
@@ -86,6 +98,7 @@ li {
   border-radius: 50%;
   height: 16.4rem;
   width: 16.4rem;
+  padding: 3rem;
   background-position: center;
   background-size: 100%;
   box-shadow: 3px 3px 3px #F21EDC, -1px -1px 1px #F21EDC;
@@ -93,6 +106,17 @@ li {
 }
 
 /* PROJECTS AND SKILLS SECTION  */
+.headings {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 0;
+}
+.headings h3:first-child{
+  padding-left: 3.5rem;
+}
+.headings h3:nth-child(2){
+  padding-left: 2.5rem;
+}
 .proj-and-skills{
   display: flex;
   justify-content: center;
@@ -102,13 +126,16 @@ li {
 .skills{
   background-color: #AADAD0;
   box-shadow: 5px 5px 3px #018C7F;
-  width: 30rem;
+  width: 15rem;
   margin-left: 2rem;
 }
 .skills ul{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
+  padding: 0;
 }
 .projects{
   width: 60rem;
@@ -116,18 +143,130 @@ li {
 .projects ul{
   display: flex;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
-
 .projects li{
-  height: 15rem;
-  width: 13rem;
+  height: 10rem;
+  width: 18.5rem;
   background-color: #AADAD0;
   box-shadow: 5px 5px 3px #047373;
+}
+.projects li figure{
+  /* background-image: ; */
+  height: 10rem;
+  width: 18.5rem;
+  padding: 0;
+  margin: 0;
+}
+.projects li:nth-child(1) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)),  url("../bo/front-page.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(1) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)),  url("../bo/front-page.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(2) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../poem/page-img.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(2) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../poem/page-img.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(3) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../cah/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(3) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../cah/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(4) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../generator/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(4) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../generator/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(5) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../rosevid/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(5) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../rosevid/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(6) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../../repos/odin-recipes/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(6) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../../repos/odin-recipes/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(7) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../../repos/odin-recipes/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(7) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../../repos/odin-recipes/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/* .projects li:nth-child(8) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../../repos/landing-page/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }*/
+
+.projects li:nth-child(8) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../portfolio/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(8) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../portfolio/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(9) figure{
+  background-image: linear-gradient(rgba(243, 231, 220, 0.5), rgba(170, 218, 208, 0.5)), url("../chers-closet/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(9) figure:hover{
+  background-image: linear-gradient(rgba(243, 231, 220, 0), rgba(170, 218, 208, 0)), url("../chers-closet/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects li:nth-child(odd):hover{
+  transform: rotate(3deg);
+  box-shadow: 5px 5px 3px #F21EDC;
+}
+.projects li:nth-child(even):hover{
+  transform: rotate(-3deg);
+  box-shadow: 5px 5px 3px #F21EDC;
+
 }
 
 
@@ -136,6 +275,6 @@ footer{
   margin-top: 5rem;
   padding-bottom: 5rem;
 }
-footer ul li:nth-child(4){
+footer ul li:nth-child(2){
   color: #F21EDC;
 }
