@@ -6,7 +6,13 @@
 /* font-family: 'Proza Libre', sans-serif;     accent*/
 /* font-family: 'Raleway', sans-serif; */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1em;
 
+}
 body {
   overflow-x: hidden;
   background-color: #F3E7DC;
@@ -35,6 +41,9 @@ li {
   align-items: center;
   padding: 3em 0 5rem;
 }
+.sub-page{
+  padding-bottom: 1rem;
+}
 
 .title-lines {
   display: inline;
@@ -52,6 +61,7 @@ li {
   text-shadow: 3px 3px 3px #DEAEAA;
 }
 
+.work
 .title:hover{
   transform: rotate(-5deg) translate(1rem, -1rem);
   transform-origin: bottom right;
@@ -112,12 +122,16 @@ h3 {
 }
 
 /* ---- ABOUT ME SECTION ----*/
-.about-me {
+.about {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   padding: 5rem 0;
 }
+.work{
+  padding: 0;
+}
+
 .img-skills{
   display: flex;
   flex-direction: column;
@@ -149,7 +163,7 @@ h3 {
   transform: rotate(35deg);
 }
 
-.about-me p, .img-skills p {
+.about p, .img-skills p {
   font-size: 1.2rem;
   font-weight: 100;
   display: flex;
@@ -163,6 +177,11 @@ h3 {
   /* margin-top: 2rem; */
   text-shadow: .01px .01px .1px #DEAEAA;
 }
+.work p{
+  width: 60rem;
+  margin: 5rem 0;
+  display: inline;
+}
 .img-skills p{
   width: 15.4rem;
 }
@@ -172,11 +191,8 @@ h3 {
 padding: 2rem;
 }
 
-.proj-container {
-  display: flex;
-  justify-content: center;
-  /* margin: auto; */
-  align-items: self-start;
+.projects {
+margin: auto;
 }
 
 .projects ul {
@@ -185,29 +201,26 @@ padding: 2rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 2rem;
 }
 
 .projects li {
-  height: 10rem;
-  width: 18.5rem;
+  width: calc(33.33% - 2rem);
   background-color: #AADAD0;
   box-shadow: 3px 3px 3px #DEAEAA;
-  /* border: 1rem inset #deaeaade; */
   transition: transform 1s ease;
+}
+.projects li a{
 }
 
 .projects li figure {
-  height: 10rem;
-  width: 18.5rem;
-  padding: 0;
-  margin: 0;
+  height: 13rem;
+  width: 100%;
   transition: transform 7s ease;
+  border: none;
 }
-.projects li figcaption{
+/* .projects li figcaption{
   transform: translate(0, -5.5rem);
-}
+} */
 
 .projects li:nth-child(1) figure {
   background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../bo/front-page.jpg");
@@ -320,10 +333,6 @@ padding: 2rem;
 .projects li:hover {
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 3px #DEAEAA;
-  
-  .projects li figcaption{
-    color: transparent;
-  }
 }
 
 
