@@ -1,7 +1,7 @@
 /* design inspiration: https://slumber.fm/ */
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Proza+Libre&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@900&family=Raleway:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@600;900&family=Raleway:wght@100;200&display=swap');
 /* font-family: 'Kalam', cursive;      Primary */
 /* font-family: 'Proza Libre', sans-serif;     accent*/
 /* font-family: 'Raleway', sans-serif; */
@@ -30,7 +30,6 @@ a {
 
 li {
   display: inline-block;
-  font-size: .90em;
   text-transform: uppercase;
 }
 
@@ -39,28 +38,19 @@ li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 3em 0 5rem;
-}
-.sub-page{
-  padding-bottom: 1rem;
-}
-
-.title-lines {
-  display: inline;
-  padding: 0;
+  padding: 3em 0 0rem;
   margin: 0;
 }
 
 .fname {
   font-family: 'Poppins', sans-serif;
-  font-size: 15rem;
-  line-height: 1;
+  font-size: 13rem;
   font-weight: 900;
-  margin: 0;
-  padding: 0;
   text-shadow: 3px 3px 3px #DEAEAA;
 }
-
+.sub-page{
+  font-weight: 600;
+}
 .work
 .title:hover{
   transform: rotate(-5deg) translate(1rem, -1rem);
@@ -78,11 +68,9 @@ a:hover {
   font-family: 'Kalam', cursive;
   line-height: inherit;
   display: inline;
-  line-height: 1em;
 }
 
 .fname span, .nav ul li:first-child {
-  /* color: #f21edc; */
   text-shadow: none;
   background: linear-gradient(to right, #f21edc, #018C7F); /* Gradient colors */
   -webkit-background-clip: text; /* For WebKit/Blink browsers like Chrome and Safari */
@@ -92,19 +80,18 @@ a:hover {
 .nav ul li:first-child{
   font-family: 'Kalam', cursive;
   font-weight: 900;
-  padding: 0 1rem;
-  margin-left: 1rem;
 }
 .nav ul li:first-child:hover{
-  font-weight: 500;
-  box-shadow: 3px 3px #DEAEAA, -3px -3px 3px #DEAEAA;
+  font-weight: 400;
 }
-.nav ul li:last-child{
-  margin-right: 1rem;
-  padding-right: 1rem;
+.nav ul li:first-child:hover{
+line-height: 1.4rem;
 }
 .nav ul li{
   margin-top: 1rem;
+}
+.nav ul li:hover{
+  line-height: 1rem;
 }
 .nav ul,
 h3 {
@@ -118,6 +105,7 @@ h3 {
   font-size: 1.5rem;
   background-color: #F3E7DC;
   text-shadow: 1px 1px 3px #DEAEAA;
+  line-height: 1rem;
 
 }
 
@@ -126,7 +114,6 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  padding: 5rem 0;
 }
 .work{
   padding: 0;
@@ -142,8 +129,8 @@ h3 {
   background-image: url("https://th.bing.com/th/id/OIG.x0EVf16f8W.wgS0k_JGv?w=1024&h=1024&rs=1&pid=ImgDetMain");
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  height: 12.4rem;
-  width: 12.4rem;
+  height: 18.4rem;
+  width: 18.4rem;
   padding: 3rem;
   background-position: center;
   background-size: 100%;
@@ -154,8 +141,8 @@ h3 {
   background-image: url("/Users/river/projects/portfolio/profilePic.jpg");
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  height: 12.4rem;
-  width: 12.4rem;
+  height: 18.4rem;
+  width: 18.4rem;
   padding: 3rem;
   background-position: right;
   background-size: 100%;
@@ -337,11 +324,8 @@ margin: auto;
 
 
 /* FOOTER  */
-footer {
-  margin-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-footer ul li:nth-child(2) {
-  color: #F21EDC;
+footer .nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 3rem 0;
 }
