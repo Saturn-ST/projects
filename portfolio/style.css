@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1em;
-
+  /* color: #047373; */
 }
 body {
   overflow-x: hidden;
@@ -47,6 +47,11 @@ li {
   font-size: 13rem;
   font-weight: 900;
   text-shadow: 3px 3px 3px #DEAEAA;
+}
+div .img-profile{
+  /* margin: auto; */
+  position: fixed;
+  top: 3rem; left: 1rem;
 }
 .sub-page{
   font-weight: 600;
@@ -97,20 +102,45 @@ line-height: 1.4rem;
 h3 {
   font-family: 'Fira Sans', sans-serif;
   margin: 0;
+  margin-right: 2rem;
   padding: 0;
   display: flex;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: flex-start;
   font-size: 1.5rem;
-  background-color: #F3E7DC;
+  /* background-color: #F3E7DC; */
   text-shadow: 1px 1px 3px #DEAEAA;
   line-height: 1rem;
 
 }
 
 /* ---- ABOUT ME SECTION ----*/
-.about {
+.about-section{
+  display: flex;
+  flex-direction: column;
+  /* gap: 4rem; */
+  margin: 4rem auto;
+  box-shadow: 3px 3px 3px #DEAEAA;
+  border: .1px solid rgb(243, 211, 181);
+  width: 60%;
+}
+
+.about-section h2{
+  background-color: #018C7F;
+  color: #fff;
+  padding: 1.5rem 0;
+  margin: auto;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.about-section p{
+  margin: auto;
+  padding: 4rem;
+  font-size: 1.2rem;
+}
+.img-profile-container {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
@@ -118,31 +148,25 @@ h3 {
 .work{
   padding: 0;
 }
-
-.img-skills{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .img-profile {
   background-image: url("https://th.bing.com/th/id/OIG.x0EVf16f8W.wgS0k_JGv?w=1024&h=1024&rs=1&pid=ImgDetMain");
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  height: 18.4rem;
-  width: 18.4rem;
-  padding: 3rem;
+  height: 13.4rem;
+  width: 13.4rem;
+  padding: 4rem;
   background-position: center;
   background-size: 100%;
   box-shadow: 3px 3px 3px #DEAEAA, -1px -1px 1px #DEAEAA;
   transition: transform 7s ease;
+  margin-top: 2rem;
 }
 .img-profile:hover {
   background-image: url("/Users/river/projects/portfolio/profilePic.jpg");
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  height: 18.4rem;
-  width: 18.4rem;
+  height: 13.4rem;
+  width: 13.4rem;
   padding: 3rem;
   background-position: right;
   background-size: 100%;
@@ -150,28 +174,6 @@ h3 {
   transform: rotate(35deg);
 }
 
-.about p, .img-skills p {
-  font-size: 1.2rem;
-  font-weight: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #AADAD0;
-  width: 30rem;
-  line-height: 2.5rem;
-  box-shadow: 3px 3px 3px #DEAEAA;
-  padding: 2rem;
-  /* margin-top: 2rem; */
-  text-shadow: .01px .01px .1px #DEAEAA;
-}
-.work p{
-  width: 60rem;
-  margin: 5rem 0;
-  display: inline;
-}
-.img-skills p{
-  width: 15.4rem;
-}
 
 /* PROJECTS AND SKILLS SECTION  */
 .headings {
@@ -196,17 +198,12 @@ margin: auto;
   box-shadow: 3px 3px 3px #DEAEAA;
   transition: transform 1s ease;
 }
-.projects li a{
-}
 
-.projects li figure {
+/* .projects li figure {
   height: 13rem;
   width: 100%;
   transition: transform 7s ease;
   border: none;
-}
-/* .projects li figcaption{
-  transform: translate(0, -5.5rem);
 } */
 
 .projects li:nth-child(1) figure {
@@ -328,4 +325,64 @@ footer .nav{
   display: flex;
   justify-content: space-between;
   padding: 3rem 3rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+.grid{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+.grid .outer-cntr{
+  height: 22.25rem;
+  width: 18.25rem;
+  border-radius: 0rem 0rem 15% 15%;
+  background: linear-gradient(to right, rgba(242, 30, 221), rgba(1, 140, 126));
+  box-shadow: 3px 3px 3px #DEAEAA;
+}
+.grid .inner-cntr{
+  display: flex;
+  flex-direction: column;
+  margin: .13rem auto;
+  height: 22rem;
+  width: 18rem;
+  border-radius: 0rem 0rem 15% 15%;
+  background-color: #F3E7DC;
+  /* background: linear-gradient(to right, rgba(242, 30, 221), rgba(1, 140, 126)); */
+  /* box-shadow: 3px 3px 3px #DEAEAA; */
+}
+
+
+.grid figure{
+  margin: auto;  
+  background-image: linear-gradient(#F3E7DC, #F3E7DC), url("old-front-page.png");
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 18rem;
+  background-size: 150%;
+  background-position: top center;
+}
+
+.grid figcaption {
+  /* color: #fff; */
+  padding: 1rem;
+  /* background-color: #F3E7DC; */
+  border-radius: 0rem 0rem 50% 50%;
+  line-height: 1.6;
+  text-shadow: .1px .1px .1px #DEAEAA;
+}
+.grid div a:hover, .grid figcaption:hover{
+  font-family: 'Proza Libre', sans-serif; 
+  color: #DEAEAA;
 }
