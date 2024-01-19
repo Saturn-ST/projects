@@ -9,11 +9,8 @@
 
 <body>
   <!-- NAVBAR -->
-  <header>
-    <div class="nav-inner">
       <nav>
         <a href="#" class="logo">What The Fork?!</a>
-        <!-- this should be a button that leads to a help page or something else in a different part of the website-->
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Alternatives</a>
@@ -27,39 +24,26 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <!-- NAVBAR UP -->
+
+  <!-- MAIN SECTION  -->
   <main>
+    <div class="fine">
+      <h3>Welcome! <br> Everything is fine.</h3>
+    </div>
     <div class="heading">
       <h1>The Word Place</h1>
-      <p class="title">Lorem Ipsum Generator</p>
-      <div class="fine">
-        <h2>Welcome! <br> Everything is fine.</h2>
-      </div>
+      <h2 class="title">Lorem Ipsum Generator</h2>
+          </div>
+  
 
-      <article>
-        <div class="article">
-          <h3>What is Lorem Ipsum?</h3>
-          <p>Lorem Ipsum serves as a placeholder text in publishing and graphic design, utilized to occupy spaces on a
-            page
-            until the final content is incorporated into the completed design.</p>
-        </div>
-      </article>
-
-
-  </main>
   <!-- FORM -->
-  <section>
+  <section class="form-and-gen-sect">
+    <div class="form-cont">
     <form action="" class="form">
-      <!-- <fieldset> -->
-      <!--   <legend>Choose your length:</legend> -->
-
+      <div>
       <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" min="1" max="50">
-
-      <!-- <label for="type-select">Choose:</label> -->
-
+      <input type="number" id="quantity" name="quantity" min="1" max="50" placeholder="1">
+      
       <label for="type">Type:</label>
       <select name="type" id="type-select" class="labels">
         <option value="paragraphs" class="labels">Paragraphs</option>
@@ -67,86 +51,81 @@
         <option value="lists" class="labels">Lists</option>
         <option value="sentences" class="labels">Sentences</option>
       </select>
-
-      <input type="checkbox" id="checkbox" name="scales" checked />
-      <label for="scales" class="starts-with">Click here to start with "The Good Place Lorem ipsum..."</label>
-     
-
+    </div>
+      
+      <div class="form-sect-ckbx">
+      <input type="checkbox" id="checkbox" name="start" checked />
+      <label for="checkbox" class="starts-with">Click here to start with "The Good Place Lorem ipsum..."</label>
+    </div>
+<div>
       <button class="generate-btn" type="button">Generate</button>
       <button class="copy-btn" type="button">Copy</button>
-
-      <!-- </fieldset> -->
-    </form>
-  </section>
-
-
+    </div>
+      </form>
+      <p>Lorem Ipsum serves as a placeholder text in publishing and graphic design, utilized to occupy spaces on a
+        page until the final content is incorporated into the completed design.</p>
+    
+  </div>
   <!-- WHEN NEW TEXT IS DISPLAYED -->
-  <section>
     <div class="generate-area">
       <p>Generated ## words.</p>
     </div>
-  </section>
+</section>
+
+
+  <!-- 	CLOWN SECTION -->
   <section>
-    <!-- 	CLOWN SECTION -->
     <div id="clown" class="clear"></div>
   </section>
 
-  <section>
-    <!-- BLOG POSTS -->
-    <div class="blog-section">
-      <!-- 	<article></article> <!-- I want there to be a clown painting behind this section -->
-      <div class="article">
-        <h3>What is Lorum Ipsum?</h3>
-        <p>Lorem Ipsum functions as placeholder text in the printing and typesetting sectors. Originating in the 1500s,
-          when an unidentified printer jumbled a selection of type to create a specimen book, Lorem Ipsum became the
-          standard placeholder text within the industry. Its endurance spans not just five centuries but also the shift
-          to
-          electronic typesetting, retaining its largely unaltered form.</p>
 
-        <div class="article">
-          <h3>Why do we use it?</h3>
-          <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
-            readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
-            of
-            letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
-            English. Numerous desktop publishing software and web page editors presently adopt Lorem Ipsum as their
-            default placeholder text. A simple search for 'Lorem Ipsum' uncovers numerous new websites. Different
-            iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
-            or similar elements.</p>
-        </div>
 
-        <div class="article">
-          <h3>Where does it come from?</h3>
-          <p>"Contrary to popular belief, Lorem Ipsum isn't merely random text; it traces its origins back to classical
-            Latin literature dating back to 45 BC, making it more than 2000 years old. Richard McClintock, a Latin
-            professor at Hampden-Sydney College in Virginia, traced the word 'consectetur'—an obscure Latin term within
-            a
-            Lorem Ipsum passage—and uncovered its undeniable source by meticulously examining citations of the word in
-            classical literature. Lorem Ipsum finds its roots in Cicero's 'de Finibus Bonorum et Malorum' (The Extremes
-            of
-            Good and Evil), a renowned work discussing ethical theories during the Renaissance, originally written in 45
-            BC."</p>
-        </div>
 
-        <div class="article">
-          <h3>The standard Lorem Ipsum passage</h3>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim
-            id est laborum."</p>
-        </div>
-      </div>
+  <!-- BLOG POSTS -->
+  <section class="blog-section">
+    <div class="bt-blog-post">
+      <h3>The standard Lorem Ipsum passage</h3>
+      <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
+        readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
+        of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
+        English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers numerous new websites. Different
+        iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
+        or similar elements.</p>
+    </div>
+
+    <div class="bt-blog-post">
+      <h3>The standard Lorem Ipsum passage</h3>
+      <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
+        readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
+        of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
+        English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers numerous new websites. Different
+        iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
+        or similar elements.</p>
+    </div>
+
+
+    <div class="bt-blog-post">
+      <h3>The standard Lorem Ipsum passage</h3>
+      <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
+        readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
+        of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
+        English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers numerous new websites. Different
+        iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
+        or similar elements.</p>
+    </div>
+
   </section>
 
+
+
+
+</main>
   <!-- 		FOOTER -->
   <footer>
     <small>
-      Made by <a href="#">Sarah Turner</a> with U+02665
+      Made by <a href="#">Sarah Turner</a> with <i class="fa-regular fa-heart"></i>
 
-      <br> <a href="#"><br>Buy Me A Coffee <i class="fa-solid fa-mug-hot"></i></a>
+      <!-- <br> <a href="#"><br>Buy Me A Coffee <i class="fa-solid fa-mug-hot"></i></a> -->
 
       <br><br> The Word Place is not associated with The Good Place or NBC
     </small>
