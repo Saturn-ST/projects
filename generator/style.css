@@ -134,6 +134,39 @@ table {
   border-spacing: 0;
 }
 
+
+
+
+
+
+/* ========BREAKING POINTS FROM THE BOOTSTRAP 
+https://getbootstrap.com/docs/5.0/layout/breakpoints/  ================
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+
+
+
+
+
+
 /* ======== MY CODE ===========  */
 
 /* design inspiration: https://lipsumator.com/ */
@@ -311,41 +344,98 @@ nav>ul li ul li>a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 60vh;
+  height: 93vh;
   background-color: white;
-  /* padding: 5rem; */
   border-bottom: 1px solid #0063A1;
-
 }
 
 .fine h3 {
   color: #6DB866;
-  font-size: 7em;
+  font-size: 2.5em;
 }
 
 .heading {
   background-color: #F7D121;
   border-bottom: 1px solid #0063A1;
-  height: 60vh;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   font-weight: 500;
-  padding-top: 1em;
   color: #0063A1;
-  font-size: 7rem;
+  font-size: 2.5em;
 }
 
 .heading h2 {
   color: #0063A1;
-  font-size: 3rem;
-  padding-bottom: 1rem;
+  font-size: 1.6em;
   margin: 0;
 }
-.heading p{
-  width: 30%;
-  margin: auto;
-}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .fine h3, h1 {
+    font-size: 3.5em;
+  }
+  .heading{
+    height: 25vh;
+  }
+  .heading h2{
+    font-size: 1.8em;
+  }
+ }
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .fine h3, h1{
+    font-size: 5em;
+  }
+  .heading{
+    height: 32vh;
+  }
+  .heading h2{
+    font-size: 2.2em;
+  }
+ }
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .fine h3, h1{
+    font-size: 6em;
+  }
+  .heading{
+    height: 38vh;
+  }
+  .heading h2{
+    font-size: 2.8em;
+  }
+ }
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .fine h3, h1{
+    font-size: 7em;
+  }
+  .heading{
+    height: 40vh;
+  }
+  .heading h2{
+    font-size: 3.2em;
+  }
+ }
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  .fine h3, h1{
+    font-size: 8em;
+  }
+  .heading{
+    height: 45vh;
+  }
+  .heading h2{
+    font-size: 3.6em;
+  }
+ }
 
 
 
@@ -442,10 +532,12 @@ input[type="checkbox"] {
 
 /* CLOWN SECTION BELLOW */
 #clown {
-  background-image: url(https://www.singulart.com/images/artworks/pictures/cropped/1391/30775/zoom/serie_30775_329fa7b9436147428612f075e3d95ea8.jpeg);
+  /* background-image: url(https://www.singulart.com/images/artworks/pictures/cropped/1391/30775/zoom/serie_30775_329fa7b9436147428612f075e3d95ea8.jpeg); */
+  background-image: url("images/clown.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top center;
+  background-size: 100%;
 }
 
 .clear {
@@ -513,3 +605,5 @@ footer a {
 footer a:hover {
   font-weight: 600;
 }
+
+
