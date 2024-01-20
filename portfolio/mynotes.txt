@@ -1,0 +1,16 @@
+1/18/24: 
+How cool would it be to have a working prototype of the website I'm showing on my website. 
+i.e. I'm scrolling through my profile and come across the grid of projects
+I hover over one of the projects and my pointer changes
+the it changes again when i hover over a link inside the projects
+I can now click on that link and it behaves as the website
+Basically the grid is a grid of browsers serving the websites on my portfolio (find out if this is possible or something close to it.)
+
+1/17/24:
+Have the colors change to gradient on select
+Change Name to underlined gradient instead of the Sa\turn being those colors
+Change Sa\turn to ST
+
+
+
+

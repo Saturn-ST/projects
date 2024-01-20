@@ -1,0 +1,756 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  /* line-height: 1; */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+
+/* ========BREAKING POINTS FROM THE BOOTSTRAP 
+https://getbootstrap.com/docs/5.0/layout/breakpoints/  ================
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+
+
+
+
+
+
+/* ======== MY CODE ===========  */
+
+/* font-family: 'Kalam', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Proza Libre', sans-serif; */
+
+* {
+  /* box-sizing: border-box; */
+}
+
+body {
+  /* overflow: hidden; */
+  background-color: #F3E7DC;
+  font-weight: 100;
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  text-transform: uppercase;
+}
+
+/* ==== NAVIGATION SECTION ==== */
+/* NAVBAR SECTION  */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+.nav ul {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding-right: 2rem;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  align-items: center;
+  text-shadow: 1px 1px 3px #DEAEAA;
+}
+.nav ul li {
+  line-height: 1em;
+  padding: 1em .5em 0 .5em;
+  border-radius: 1em;
+}
+.nav ul li:hover{
+  font-family: 'kalam', sans-serif;
+  /* font-weight: 500; */
+  background: linear-gradient(to right, rgba(242, 30, 220, 0.7), rgba(1, 140, 127, 0.7));
+  color: #fff;
+  padding: 0.25em 0.5em 0;
+  line-height: 1em;
+  transform: translate(0, .45em);
+}
+.nav ul li:active{
+  border: 1px solid rgba(1, 140, 127, 1);
+}
+
+
+
+.nav.top ul li:first-child {
+  /* font-family: 'Kalam', cursive; */
+}
+
+.nav.top ul li:first-child:hover {
+  /* font-family: 'Kalam', cursive; */
+  line-height: 1em;
+}
+
+.nav ul li:first-child {
+  text-shadow: none;
+  background: linear-gradient(to right, #f21edc, #018C7F);
+  -webkit-background-clip: text;
+  /* For WebKit/Blink browsers like Chrome and Safari */
+  color: transparent;
+  /* Make the text transparent so that the gradient is visible through it */
+  display: inline-block;
+  /* Ensure the gradient applies only to the text, not the entire line */
+}
+
+/* PROFILE IMAGE SECTION INSIDE THE NAVBAR  */
+.prf-img-a {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 40%;
+  left: center;
+  margin: 0;
+}
+
+.img-profile {
+  background-image: url("images/profile-ai-img.jpeg");
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  height: 8.4rem;
+  flex-basis: 8.4rem;
+  padding: 4rem;
+  background-position: center;
+  background-size: 100%;
+  box-shadow: 3px 3px 3px #DEAEAA, -1px -1px 1px #DEAEAA;
+  transition: transform .25s ease;
+}
+
+.img-profile:hover {
+  background-image: url("images/profilePic.jpg");
+  /* aspect-ratio: 1 / 1; */
+  background-position: left;
+  background-size: 140%;
+  transform: rotate(35deg);
+}
+
+/* FOOTER  NAVIGATION */
+footer .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+/* ==== HERO SECTION FOR PAGE ONE ==== */
+.hero {
+  font-family: 'Kalam', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+.hero>a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+h1, h2, .title{
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  /* text-shadow: 3px 3px 3px #DEAEAA; */
+}
+h1, h2, .title {
+  text-shadow: none;
+  background: linear-gradient(to right, #f21edc, #018C7F);
+  -webkit-background-clip: text;
+  /* For WebKit/Blink browsers like Chrome and Safari */
+  color: transparent;
+  /* Make the text transparent so that the gradient is visible through it */
+  display: inline-block;
+  /* Ensure the gradient applies only to the text, not the entire line */
+}
+h1, h2 {
+  font-size: 6em;
+}
+h2{
+  transform: translate(0, -.75em);
+}
+.title {
+  font-size: 3em;
+  transform: translate(0, -2.8em);
+}
+
+
+/* MEDIA QUERIES SECTION  */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  nav{
+    justify-content: flex-end;
+  }
+  .prf-img-a {
+    top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  h1, h2 {
+    font-size: 8em;
+  }
+  .title {
+    font-size: 4em;
+    transform: translate();
+  }
+  footer .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1, h2 {
+    font-size: 10.5em;
+  }
+  .prf-img-a {
+    top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .title {
+    font-size: 5em;
+    transform: translate(0, -2.8em);
+  }
+  nav, footer .nav {
+    font-size: 1.2em;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1, h2 {
+    font-size: 16.5em;
+  }
+  .prf-img-a {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .img-profile {
+    height: 4.4rem;
+    flex-basis: 4.4rem;
+    }
+  
+  .title {
+    font-size: 6em;
+    transform: translate(0, -3.6em);
+  }
+  nav, footer .nav {
+    font-size: 1.5em;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1, h2 {
+    /* font-size: 20.5em; */
+  }
+  .prf-img-a {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .img-profile {
+    height: 6.4rem;
+    flex-basis: 6.4rem;
+    }
+
+  .title {
+    font-size: 7em;
+    transform: translate(0, -3.1em);
+  }
+  nav, footer .nav {
+    font-size: 1.8em;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  h1, h2 {
+    /* font-size: 22.5em; */
+  }
+  .prf-img-a {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+
+  }
+  .title {
+    font-size: 8em;
+    transform: translate(0, -2.8em);
+  }
+  nav, footer .nav {
+    font-size: 2em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-page {
+  font-weight: 600;
+}
+
+.work {
+  transform: rotate(-5deg) translate(1rem, -1rem);
+  transform-origin: bottom right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- ABOUT ME SECTION ----*/
+.about-section {
+  display: flex;
+  flex-direction: column;
+  /* gap: 4rem; */
+  margin: 4rem auto;
+  box-shadow: 3px 3px 3px #DEAEAA;
+  border: .1px solid rgb(243, 211, 181);
+  width: 60%;
+}
+
+.about-section h2 {
+  background-color: #018C7F;
+  color: #fff;
+  padding: 1.5rem 0;
+  margin: auto;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.about-section p {
+  margin: auto;
+  padding: 4rem;
+  flex-basis: 12rem;
+  font-size: 1.2rem;
+  flex-grow: 1;
+}
+
+.work {
+  padding: 0;
+}
+
+
+
+
+/* PROJECTS AND SKILLS SECTION  */
+.headings {
+  padding: 2rem;
+}
+
+.projects {
+  margin: auto;
+}
+
+.projects ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects li {
+  width: calc(33.33% - 2rem);
+  background-color: #AADAD0;
+  box-shadow: 3px 3px 3px #DEAEAA;
+  transition: transform 1s ease;
+  flex-grow: 1;
+}
+
+/* .projects li figure {
+  height: 13rem;
+  width: 100%;
+  transition: transform 7s ease;
+  border: none;
+} */
+
+.projects li:nth-child(1) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../bo/front-page.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(1) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../bo/front-page.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(2) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../poem/page-img.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(2) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../poem/page-img.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(3) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../cah/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(3) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../cah/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(4) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../generator/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(4) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../generator/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(5) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../rosevid/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(5) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../rosevid/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(6) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../../repos/odin-recipes/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(6) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../../repos/odin-recipes/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(7) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../../repos/odin-recipes/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(7) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../../repos/odin-recipes/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(8) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../portfolio/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(8) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../portfolio/old-front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(9) figure {
+  background-image: linear-gradient(rgba(170, 218, 208), rgba(170, 218, 208)), url("../chers-closet/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:nth-child(9) figure:hover {
+  background-image: linear-gradient(rgba(170, 218, 208, 0.1), rgba(170, 218, 208, 0.1)), url("../chers-closet/front-page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.projects li:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 3px #DEAEAA;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NEW PROJECT DESIGN  */
+.grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  flex-grow: 1;
+}
+
+.grid .outer-cntr {
+  height: 21.25rem;
+  flex-basis: 25.25%;
+  border-radius: 0rem 0rem 15% 15%;
+  background: linear-gradient(to right, rgba(242, 30, 221), rgba(1, 140, 126));
+  box-shadow: 3px 3px 3px #DEAEAA;
+}
+
+.grid .outer-cntr:nth-of-type(1) {
+  /* flex-grow: 1; */
+}
+
+.grid .inner-cntr {
+  display: flex;
+  flex-direction: column;
+  margin: .13rem auto;
+  height: 21rem;
+  flex-basis: 25%;
+  border-radius: 0rem 0rem 15% 15%;
+  background-color: #018C7F;
+  /* background: linear-gradient(to right, rgba(242, 30, 221), rgba(1, 140, 126)); */
+  /* box-shadow: 3px 3px 3px #DEAEAA; */
+}
+
+.grid figcaption {
+  /* color: #fff; */
+  padding: .8rem;
+  /* background-color: #F3E7DC; */
+  border-radius: 0rem 0rem 50% 50%;
+  line-height: 1.5;
+  text-shadow: .1px .1px .1px #DEAEAA;
+}
+
+.grid div a:hover,
+.grid figcaption:hover {
+  /* font-family: 'Proza Libre', sans-serif; */
+  color: #DEAEAA;
+}
+
+.grid figure {
+  margin: auto;
+  background-image: linear-gradient(#f3e7dc12, #f3e7dc1d), url("../cah/front-page.png");
+  background-repeat: no-repeat;
+  height: 15rem;
+  flex-basis: 100%;
+  background-size: 150%;
+  background-position: top center;
+}
