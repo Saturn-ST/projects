@@ -21,10 +21,17 @@ https://getbootstrap.com/docs/5.0/layout/breakpoints/  ================
 
 
 /* ======== MY CODE ===========  */
-
+/* FONT FAMILIES  */
 /* font-family: 'Kalam', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Proza Libre', sans-serif; */
+/* COLORS  */
+/* background-color: #F3E7DC; */
+/* shadow: #DEAEAA; */
+/* linear-gradient(to right, #f21edc, #018C7F); */
+/* border: #f3d3b5; */
+
+
 
 * {
   /* box-sizing: border-box; */
@@ -55,7 +62,7 @@ ul {
   list-style: none;
 }
 
-nav li {
+.nav li {
   text-transform: uppercase;
 }
 
@@ -230,9 +237,9 @@ h2 {
   gap: 1em;
   margin: 2em auto .4em;
   box-shadow: 3px 3px 3px #DEAEAA, -.5px -.5px 3px #DEAEAA;
-  border: .1px solid rgb(243, 211, 181);
+  border: .1px solid #DEAEAA;
   width: 80%;
-  padding: 1em 0 2em;
+  padding: .5em 0 .5em;
   border-radius: 1em;
 }
 
@@ -303,9 +310,9 @@ main.work {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: .1px solid rgb(243, 211, 181);
+  border: .1px solid #DEAEAA;
   box-shadow: 3px 3px 3px #DEAEAA, -.5px -.5px 3px #DEAEAA;
-  margin-top: 3em;
+  margin-top: 3em 0;
   /* padding: 2em 0; */
   width: 100%;
 }
@@ -326,6 +333,7 @@ main.work {
   flex-direction: column;
   width: 100%;
   height: 17em;
+  margin: 0;
 }
 .work-grid .links {
   display: flex;
@@ -353,33 +361,41 @@ main.work {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.work-grid .img:hover{
+  border: 9px outset #DEAEAA;
+}
 .work-grid li:nth-of-type(1) .img {
-  background-image: url("images/old-front-page.png");
+  background-image: url("../poem/page-img.png");
+  background-size: 110%;
 }
 .work-grid li:nth-of-type(2) .img {
-  background-image: url("../bo/images/front-page.jpg");
+  background-image: url("../rosevid/front-page.png");
 }
 .work-grid li:nth-of-type(3) .img {
-  background-image: url("../cah/front-page.png");
+  background-image: url("../bo/images/front-page.jpg");
+  background-size: 110%;
 }
 .work-grid li:nth-of-type(4) .img {
   background-image: url("../generator/images/front-page.png");
+  background-size: 110%;
 }
 .work-grid li:nth-of-type(5) .img {
-  background-image: url("../poem/page-img.png");
+  background-image: url("../../repos/odin-recipes/images/old-front-page.png");
+  background-size: 110%;
 }
 .work-grid li:nth-of-type(6) .img {
-  background-image: url("../rosevid/front-page.png");
+  background-image: url("images/old-front-page.png"); /* first portfolio page */
+  background-size: 120%;
 }
 .work-grid li:nth-of-type(7) .img {
-  background-image: url("../../repos/odin-recipes/images/old-front-page.png");
+  background-image: url("../cah/front-page.png");
 }
-.work-grid li:nth-of-type(8) .img {
+/* .work-grid li:nth-of-type(8) .img {
   background-image: url("");
 }
 .work-grid li:nth-of-type(9) .img {
   background-image: url("");
-}
+} */
 
 
 
@@ -457,6 +473,10 @@ padding-top: 2em;
   .title {
     font-size: 5em;
     transform: translate(0, -2.8em);
+  }
+  .nav.top{
+    justify-content: flex-end;
+    margin: 0 1em;
   }
   nav,
   .nav.bt {
