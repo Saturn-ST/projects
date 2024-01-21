@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Cards Against Humanity</title>
+
 </head>
 
 <body>
 
-  <main>
+  <main class="">
     <section>
       <div class="heading">
-        <h1>Cards Against Humanity</h1>
-        <h2>A party game for horrible people.</h2>
+        <h1 class="display-1">Cards Against Humanity</h1>
+        <h2 class="display-4">A party game for horrible people.</h2>
       </div>
     </section>
 
@@ -28,103 +31,116 @@
       </div>
     </section>
 
-    
 
-<!-- DECKS SECTION  -->
-<section class="decks-container">
-  <h3>Decks</h3>
-  <div class="decks">
-  <div class="card blk-card sample-blk">
-    <p>Question?</p>
-  </div>
-  <div class="card sample-wht">
-    <p>Clever answer.</p>
-  </div>
-</div>
-<div class="decks-btn-container">
-<button>DEAL</button>
-<button>DRAW</button>
-</div>
-</section>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <h4>YOU <strong>WIN</strong> THIS ROUND!</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <button class="btn btn-success">PLAY AGAIN</button>
+      <button class="btn btn-danger">HOME</button>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <h4>YOU <strong>LOSE</strong> THIS ROUND!</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <button class="btn btn-success">PLAY AGAIN</button>
+      <button class="btn btn-danger">RUN HOME TO YOUR MOMMY</button>
+    </div>
 
 
-  <!-- PLAYER 1 HAND SECTION -->
-  <div class="hand">
-    <h3>Player: Name</h3>
-    <div class="set">
-          <!-- Card 1 -->
-            <div class="card two hand-card1">
-              <p>Dying.</p>
-            </div>
-          <!-- Card 2 -->
-          <div class="card two hand-card2">
-            <p>The Blood of Christ.</p>
-          </div>
-          <!-- Card 3 -->
-          <div class="card two hand-card3">
-            <p>Gloryholes.</p>
-          </div>
-          <!-- Card 4 -->
-          <div class="card two hand-card4">
-            <p>Poor life choices.</p>
-          </div>
-          <!-- Card 5 -->
-          <div class="card two hand-card5">
-            <p>A defective condom.</p>
-          </div>
+    <!-- DECKS SECTION  -->
+    <section class="decks-">
+      <h3>Decks</h3>
+      <div class="decks">
+        <div class="card blk-card sample-blk">
+          <p>Question?</p>
         </div>
+        <div class="card sample-wht">
+          <p>Clever answer.</p>
         </div>
+      </div>
+      <div class="decks-btn-container btn-group" role="group">
+        <button type="button" class="btn btn-success">DEAL</button>
+        <button type="button" class="btn btn-info">DRAW</button>
+      </div>
+    </section>
 
-  <!-- PLAYER 2 HAND SECTION -->
-  <div class="hand two">
-    <h3>PLAYER: Name</h3>
-    <div class="set">
-          <!-- Card 1 -->
-            <div class="card two hand-card1">
-              <p>The female orgasm.</p>
-            </div>
-          <!-- Card 2 -->
-          <div class="card two hand-card2">
-            <p>Being a box that is conscious and wishes that it weren't a box.</p>
-          </div>
-          <!-- Card 3 -->
-          <div class="card two hand-card3">
-            <p>Consent.</p>
-          </div>
-          <!-- Card 4 -->
-          <div class="card two hand-card4">
-            <p>Spending lots of money.</p>
-          </div>
-          <!-- Card 5 -->
-          <div class="card two hand-card5">
-            <p>Daddy's credit card.</p>
-          </div>
+
+    <!-- PLAYER 1 HAND SECTION -->
+    <div class="hand">
+      <h3>Player: Name</h3>
+      <div class="set">
+        <!-- Card 1 -->
+        <div class="card two hand-card1">
+          <p>Dying.</p>
         </div>
+        <!-- Card 2 -->
+        <div class="card two hand-card2">
+          <p>The Blood of Christ.</p>
         </div>
+        <!-- Card 3 -->
+        <div class="card two hand-card3">
+          <p>Gloryholes.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="card two hand-card4">
+          <p>Poor life choices.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="card two hand-card5">
+          <p>A defective condom.</p>
+        </div>
+      </div>
+    </div>
 
-      
+    <!-- PLAYER 2 HAND SECTION -->
+    <div class="hand two">
+      <h3>PLAYER: Name</h3>
+      <div class="set">
+        <!-- Card 1 -->
+        <div class="card two hand-card1">
+          <p>The female orgasm.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card two hand-card2">
+          <p>Being a box that is conscious and wishes that it weren't a box.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card two hand-card3">
+          <p>Consent.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="card two hand-card4">
+          <p>Spending lots of money.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="card two hand-card5">
+          <p>Daddy's credit card.</p>
+        </div>
+      </div>
+    </div>
 
-<!-- RESULTS SECTION  -->
-<div class="results">
-<h3>Question w/ Answers</h3>      
-<!-- Black card 1	-->
+
+
+    <!-- RESULTS SECTION  -->
+    <div class="results">
+      <h3>Question w/ Answers</h3>
+      <!-- Black card 1	-->
       <div class="card blk-card">
         <p>Question</p>
-         </div>
+      </div>
       <!-- Black card 2 -->
       <div class="card blk-card">
         <p>Question</p>
-         </div>
+      </div>
       <!-- Black card 3 -->
       <div class="card blk-card">
         <p>Question</p>
-         </div>
+      </div>
       <!-- Black card 4 -->
       <div class="card blk-card">
         <p>Question</p>
-         </div>
+      </div>
 
-    <!-- 	Second half -->
+      <!-- 	Second half -->
       <!-- White card 1	-->
       <div class="card vt-answer-card">
         <p>Answer</p>
@@ -132,7 +148,7 @@
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #dedede;"></i>
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #3bd134;"></i>
         </form>
-        </div>
+      </div>
       <!-- White card 2 -->
       <div class="card vt-answer-card">
         <p>Answer</p>
@@ -140,7 +156,7 @@
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #dedede;"></i>
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #3bd134;"></i>
         </form>
-        </div>
+      </div>
       <!-- White card 3 -->
       <div class="card vt-answer-card">
         <p>Answer</p>
@@ -148,7 +164,7 @@
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #dedede;"></i>
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #3bd134;"></i>
         </form>
-        </div>
+      </div>
       <!-- White card 4 -->
       <div class="card vt-answer-card">
         <p>Answer</p>
@@ -156,10 +172,10 @@
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #dedede;"></i>
           <i class="fa-regular fa-face-grin-tears symbol" style="color: #3bd134;"></i>
         </form>
-          <span style="color: #3bd134;">Mine</span>
+        <span style="color: #3bd134;">Mine</span>
 
-        </div>
       </div>
+    </div>
 
 
 
@@ -170,33 +186,37 @@
     <lu>
       <li>Made by <a href="#">Sarah Turner</a> with &hearts;</li>
       <li>
-        <a href="#">Buy Me A Coffee   
-        <i class="fa-solid fa-mug-hot"></i>
-      </a>
-    </li>
-      <li>This site is not associated with Cards Against Humanity. <br>My mom loved this game and working on it makes me feel close to her after she passed away earlier this year.</li>
+        <!-- <a href="#">Buy Me A Coffee    -->
+        <!-- <i class="fa-solid fa-mug-hot"></i> -->
+        </a>
+      </li>
+      <li>This site is not associated with Cards Against Humanity. <br>My mom loved this game and working on it makes me
+        feel close to her after she passed away earlier this year.</li>
     </lu>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/efa6c20d3e.js" crossorigin="anonymous"></script>
 
 </body>
 
 
-    <!-- RULES SECTION BOX -->
-    <section class="rules">
-      <a href="">X</a>
-      <h3>Game Rules</h3>
-      <ul>
-        <li>As you hover over a card it opens to show that card.</li>
-        <li>Click on it to select it.</li>
-        <li>Players vote on a winner</li>
-        <li>Players Can&apos;t vote on their own card</li>
-      </ul>
-    </section>
-        <!-- RULES SECTION TAB -->
-        <section class="rules-tab">
-          <h3>Game Rules</h3>
-        </section>
-</html>
+<!-- RULES SECTION BOX -->
+<section class="rules">
+  <a href="">X</a>
+  <h3>Game Rules</h3>
+  <ul>
+    <li>As you hover over a card it opens to show that card.</li>
+    <li>Click on it to select it.</li>
+    <li>Players vote on a winner</li>
+    <li>Players Can&apos;t vote on their own card</li>
+  </ul>
+</section>
+<!-- RULES SECTION TAB -->
+<section class="rules-tab">
+  <h3>Game Rules</h3>
+</section>
 
-<script src="https://kit.fontawesome.com/efa6c20d3e.js" crossorigin="anonymous"></script>
+</html>
