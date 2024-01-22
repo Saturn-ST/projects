@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>The Word Place Lorem Ipsum Generator</title>
 </head>
 
 <body>
   <!-- NAVBAR -->
-      <nav>
-        <a href="#" class="logo">What The Fork?!</a>
+  <nav>
+    <a href="#" class="logo">What The Fork?!</a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Alternatives</a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Alternatives</a>
-            <ul>
-              <li><a href="#">Web</a></li>
-              <li><a href="#">Print</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Public API</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Web</a></li>
+          <li><a href="#">Print</a></li>
         </ul>
-      </nav>
+      </li>
+      <li><a href="#">Public API</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- MAIN SECTION  -->
   <main>
@@ -33,93 +35,143 @@
     <div class="heading">
       <h1>The Word Place</h1>
       <h2 class="title">Lorem Ipsum Generator</h2>
+      
+    </div>
+
+
+    <!-- FORM SECTION  -->
+    <section class="container">
+      <form action="#pending" class="form">
+        <div class="row">
+          <div class="form-group col">
+            <label class="" for="quantity">Quantity:</label>
+            <input class="form-control" type="number" id="quantity" name="quantity" min="1" max="50" placeholder="1">
           </div>
-  
-
-  <!-- FORM -->
-  <section class="form-and-gen-sect">
-    <div class="form-cont">
-    <form action="" class="form">
-      <div>
-      <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" min="1" max="50" placeholder="1">
-      
-      <label for="type">Type:</label>
-      <select name="type" id="type-select" class="labels">
-        <option value="paragraphs" class="labels">Paragraphs</option>
-        <option value="words" class="labels">Words</option>
-        <option value="lists" class="labels">Lists</option>
-        <option value="sentences" class="labels">Sentences</option>
-      </select>
-    </div>
-      
-      <div class="form-sect-ckbx">
-      <input type="checkbox" id="checkbox" name="start" checked />
-      <label for="checkbox" class="starts-with">Click here to start with "The Good Place Lorem ipsum..."</label>
-    </div>
-<div>
-      <button class="generate-btn" type="button">Generate</button>
-      <button class="copy-btn" type="button">Copy</button>
-    </div>
+          <div class="form-group col">
+            <label for="type">Type:</label>
+            <select class="form-select" name="type" id="type-select" class="labels">
+              <option value="paragraphs" class="labels">Paragraphs</option>
+              <option value="words" class="labels">Words</option>
+              <option value="lists" class="labels">Lists</option>
+              <option value="sentences" class="labels">Sentences</option>
+            </select>
+          </div>
+          <div class=" form-group col">
+            <div class="form-check form-sect-ckbx">
+              <input class="form-check-input" type="checkbox" value="" id="startswith" name="start" checked>
+              <label class="form-check-label starts-with" for="startswith">Click here to start with "The Good Place
+                Lorem ipsum..."</label>
+            </div>
+          </div>
+          <div class="form-group col">
+            <button class="btn btn-success generate-btn" type="button" id="form">Generate</button>
+            <button class="btn btn-primary copy-btn" type="button">Copy</button>
+          </div>
+        <div class="form-floating">
+          <textarea class="form-control generate-area" placeholder="Generated ## words." id="text-generator"
+            style="height: 400px"></textarea>
+          <label for="text-generator">
+            <p>Lorem Ipsum serves as a placeholder text in publishing and graphic design, <br>utilized to occupy spaces on a
+            page until the final content is incorporated into the completed design.</p></label>
+        </div>
+      </div>
       </form>
-      <p>Lorem Ipsum serves as a placeholder text in publishing and graphic design, utilized to occupy spaces on a
-        page until the final content is incorporated into the completed design.</p>
-    
-  </div>
-  <!-- WHEN NEW TEXT IS DISPLAYED -->
-    <div class="generate-area">
-      <p>Generated ## words.</p>
-    </div>
-</section>
+    </section>
 
 
-  <!-- 	CLOWN SECTION -->
-  <section>
-    <div id="clown" class="clear"></div>
-  </section>
-
-
-
-
-  <!-- BLOG POSTS -->
-  <section class="blog-section">
-    <div class="bt-blog-post">
-      <h3>The standard Lorem Ipsum passage</h3>
-      <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
-        readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
-        of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
-        English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers numerous new websites. Different
-        iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
-        or similar elements.</p>
-    </div>
-
-    <div class="bt-blog-post">
-      <h3>The standard Lorem Ipsum passage</h3>
-      <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
-        readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
-        of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
-        English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers numerous new websites. Different
-        iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
-        or similar elements.</p>
-    </div>
-
-
-    <div class="bt-blog-post">
-      <h3>The standard Lorem Ipsum passage</h3>
-      <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
-        readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
-        of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
-        English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers numerous new websites. Different
-        iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
-        or similar elements.</p>
-    </div>
-
-  </section>
+    <!-- FORM -->
+    <!-- <section class="container form-and-gen-sect">
+      <div class="form-cont">
+        <form action="" class="form">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label class="" for="quantity">Quantity:</label>
+              <input class="form-control" type="number" id="quantity" name="quantity" min="1" max="50" placeholder="1">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="type">Type:</label>
+              <select class="form-select" name="type" id="type-select" class="labels">
+                <option value="paragraphs" class="labels">Paragraphs</option>
+                <option value="words" class="labels">Words</option>
+                <option value="lists" class="labels">Lists</option>
+                <option value="sentences" class="labels">Sentences</option>
+              </select>
+            </div>
+          </div>
+          <div class=" form-group">
+            <div class="form-check form-sect-ckbx">
+              <input class="form-check-input" type="checkbox" value="" id="startswith" name="start" checked>
+              <label class="form-check-label starts-with" for="startswith">Click here to start with "The Good Place
+                Lorem ipsum..."</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-success generate-btn" type="button" id="form">Generate</button>
+            <button class="btn btn-primary copy-btn" type="button">Copy</button>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control generate-area" placeholder="Generated ## words." id="text-generator"
+              style="height: 100px"></textarea>
+            <label for="text-generator">The Good Place Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus, beatae ullam! Quam inventore quia fugiat sapiente temporibus <br>iusto laudantium. Obcaecati,
+              fugiat eius veritatis quam velit molestias numquam quia officia quos?</label>
+          </div>
+        </form>
+      </div>
+    </section> -->
 
 
 
 
-</main>
+    <!-- 	CLOWN SECTION -->
+    <section>
+      <div id="clown" class="clear"></div>
+    </section>
+
+
+
+
+    <!-- BLOG POSTS -->
+    <section class="blog-section">
+      <div class="bt-blog-post">
+        <h3>The standard Lorem Ipsum passage</h3>
+        <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
+          readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
+          of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
+          English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers
+          numerous new websites. Different
+          iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
+          or similar elements.</p>
+      </div>
+      <div class="bt-blog-post">
+        <h3>The standard Lorem Ipsum passage</h3>
+        <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
+          readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
+          of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
+          English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers
+          numerous new websites. Different
+          iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
+          or similar elements.</p>
+      </div>
+
+
+      <div class="bt-blog-post">
+        <h3>The standard Lorem Ipsum passage</h3>
+        <p>The widely acknowledged fact is that when individuals examine a layout, they tend to be diverted by the
+          readable content. The purpose behind employing Lorem Ipsum is its semblance to a more natural distribution
+          of letters, as opposed to using repetitive phrases like 'Content here, content here,' which can mimic readable
+          English. Numerous desktop publishing software and web page editors. A simple search for 'Lorem Ipsum' uncovers
+          numerous new websites. Different
+          iterations have surfaced over time, occasionally by chance and occasionally by deliberate insertion of humor
+          or similar elements.</p>
+      </div>
+
+    </section>
+
+
+
+
+  </main>
   <!-- 		FOOTER -->
   <footer>
     <small>
@@ -131,7 +183,15 @@
     </small>
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/efa6c20d3e.js" crossorigin="anonymous"></script>
 
 </body>

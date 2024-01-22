@@ -1,0 +1,21 @@
+Add some bootstrap to the buttons and form: https://getbootstrap.com/docs/5.3/forms/overview/
+
+add a toggle switch 
+
+at different sizes add different effects check out lynnandtonic.com for inspiration:
+400% - 
+300% - 
+250% - 
+200% - 
+175% - St. Clair's middle place
+150% - train
+125% - trolly
+110% - chalkboard
+100% - Normal clean design
+90% - Put flying people
+80% - make the design blue and yellow wavy lines (like the shirts on day 2)
+75% - add flying shrimp
+67% - add a girraffe 
+50% - add trash piles
+33% - 
+25% - 
