@@ -24,18 +24,22 @@ body{
 }
 h1{
     font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
 }
 a{
     text-decoration: none;
     color: inherit;
 }
-.header h2{
-    font-family: 'Montserrat Subrayada', sans-serif;
-}
-h1, h2, form{
-    color: #fff;
+
+/* NAVIGATION SECTION   */
+.navbar{
+    background-color: #000;
 }
 
+.header h2{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #fff;
+}
 .flex-col{
     display: flex;
     flex-direction: column;
