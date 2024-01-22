@@ -1,25 +1,159 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SATURN PHOTOGRAPHY</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"> 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
-    </style> 
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SATURN PHOTOGRAPHY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+  </style>
 </head>
-  <body>
-    <div class="container">
-      <h1>SATURN</h1>
-      <h2>PHOTOGRAPHY</h2>
+
+<body>
+
+  <!-- HEADER SECTION  -->
+  <section class="bk-img flex-col img-fluid">
+    <div class="container header">
+      <h1 class="display-1 text-center">SATURN</h1>
+      <h2 class="text-center">PHOTOGRAPHY</h2>
       <form action="">Search</form>
     </div>
+  </section>
+
+  <!-- BIOGRAPHY SECTION  -->
+  <div class="container row">
+    <div class="col-lg-6">
+      <h2 class="display-2 bio-h2">SARAH <br> TURNER</h2>
+      <sub>THEY | THEM</sub>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam incidunt totam ipsam fugit
+        obcaecati, consequatur quo officia quam reprehenderit laboriosam eveniet asperiores explicabo, suscipit iste
+        dolorum, maiores nobis expedita qui!</p>
+      <h4>CANDID & STREET PHOTOGRAPHY</h4>
+    </div>
+    <div class="col-lg-6">
+      <img class="img-fluid" src="../portfolio/images/profilePic.jpg" alt="">
+    </div>
+  </div>
+
+
+  <!-- 3 ACROSS GRID SECTION  -->
+  <div class="container row grid-cont">
+    <div class="bg-white col-lg-4 grid-area">
+      <img class="grid-img img-fluid"
+        src="https://images.unsplash.com/photo-1546636889-ba9fdd63583e?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+      <h3 class="display-8">PROJECT TITLE HERE</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cum aut odit quo facere reprehenderit sequi
+        maxime itaque! Alias incidunt sint nisi cum labore et, in inventore voluptates error distinctio?</p>
+      <button type="button" class="btn btn-outline-primary btn-sm">See More <span class="badge badge-light"> ->
+        </span></button>
+    </div>
+    <div class="bg-white col-lg-4 grid-area">
+      <img class="grid-img img-fluid"
+        src="https://images.unsplash.com/photo-1620259570543-31964aa22586?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+      <h3 class="display-8">PROJECT TITLE HERE</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cum aut odit quo facere reprehenderit sequi
+        maxime itaque! Alias incidunt sint nisi cum labore et, in inventore voluptates error distinctio?</p>
+      <button type="button" class="btn btn-primary btn-sm">See More <span class="badge badge-dark badge-pill"> ->
+        </span></button>
+    </div>
+    <div class="bg-white col-lg-4 grid-area">
+      <img class="grid-img img-fluid"
+        src="https://images.unsplash.com/photo-1628227361602-eedff53b595a?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+      <h3 class="display-8">PROJECT TITLE HERE</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cum aut odit quo facere reprehenderit sequi
+        maxime itaque! Alias incidunt sint nisi cum labore et, in inventore voluptates error distinctio?</p>
+      <button type="button" class="btn btn-primary btn-sm">See More <span class="badge badge-dark"> -> </span></button>
+    </div>
+  </div>
+
+  <!-- PHOTO / QUOTE OVERLAPPING ON WHITE BACKGROUND SECTION  -->
+  <div class="container row">
+    <img class="quote-img col-6 img-fluid" src="https://images.unsplash.com/photo-1611759771149-12fa49633720?q=80&w=2119&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <blockquote class="blockquote mb-0 bg-dark col-6">
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit nobis ex! Ullam
+        excepturi quasi fugit maiores deserunt. Perferendis quod quis aspernatur iusto vel consequuntur voluptatum quas
+        numquam et aut.</p>
+      <footer class="blockquote-footer">Ms. Lorema Ipsuma</footer>
+    </blockquote>
+  </div>
+
+  <!-- 4X2 GRID SECTION  -->
+  <div class="container grid-page">
+    <ul class="row align-items-end">
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-warning">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1625921765718-40e14ee8641c?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-info">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1645045791963-a1af96c24782?q=80&w=2241&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      </li>
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      </li>
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1645045791963-a1af96c24782?q=80&w=2241&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      </li>
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      </li>
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      </li>
+      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+        <a href="">
+          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+
+    </ul>
+  </div>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
