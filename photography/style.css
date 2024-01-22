@@ -33,7 +33,7 @@ a{
 
 /* NAVIGATION SECTION   */
 .navbar{
-    background-color: #000;
+    
 }
 
 .header h2{
@@ -55,7 +55,7 @@ a{
     height: 120vh;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("images/OIG2.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("images/20190919_065609.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-position: center; */
@@ -80,6 +80,12 @@ a{
 }
 .grid-area{
     padding: 1em;
+}
+.arrows{
+    padding: 1em;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
 }
 
 

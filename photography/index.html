@@ -52,12 +52,18 @@
     <div class="container header">
       <h1 class="display-1 text-center">SATURN</h1>
       <h2 class="text-center">PHOTOGRAPHY</h2>
-      <form action="">Search
+      <div class="row justify-content-center">
+      <form action="#searchwithjs" class="col-4">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+          <input type="text" class="form-control shadow" placeholder="Search" aria-label="search" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary shadow" type="button" id="button-addon2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </button>
         </div>
       </form>
+    </div>
     </div>
   </section>
 
@@ -81,7 +87,7 @@
   <div class="container row grid-cont">
     <div class="bg-white col-lg-4 grid-area">
       <img class="grid-img img-fluid"
-        src="https://images.unsplash.com/photo-1546636889-ba9fdd63583e?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="images/20180905_185755.jpg"
         alt="">
       <h3 class="display-8">PROJECT TITLE HERE</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cum aut odit quo facere reprehenderit sequi
@@ -89,9 +95,9 @@
       <button type="button" class="btn btn-outline-primary btn-sm">See More <span class="badge badge-light"> ->
         </span></button>
     </div>
-    <div class="bg-white col-lg-4 grid-area">
+    <div class="bg-white col-lg-4 grid-area d-none d-md-inline">
       <img class="grid-img img-fluid"
-        src="https://images.unsplash.com/photo-1620259570543-31964aa22586?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="images/20190917_212849.jpg"
         alt="">
       <h3 class="display-8">PROJECT TITLE HERE</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, cum aut odit quo facere reprehenderit sequi
@@ -99,7 +105,7 @@
       <button type="button" class="btn btn-primary btn-sm">See More <span class="badge badge-dark badge-pill"> ->
         </span></button>
     </div>
-    <div class="bg-white col-lg-4 grid-area">
+    <div class="bg-white col-lg-4 grid-area d-none d-md-inline">
       <img class="grid-img img-fluid"
         src="https://images.unsplash.com/photo-1628227361602-eedff53b595a?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="">
@@ -108,6 +114,16 @@
         maxime itaque! Alias incidunt sint nisi cum labore et, in inventore voluptates error distinctio?</p>
       <button type="button" class="btn btn-primary btn-sm">See More <span class="badge badge-dark"> -> </span></button>
     </div>
+  <div class="arrows">
+    <a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+    </svg></a>
+    <a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+    </svg></a>
+  </div>
   </div>
 
   <!-- PHOTO / QUOTE OVERLAPPING ON WHITE BACKGROUND SECTION  -->
@@ -124,56 +140,56 @@
   <!-- 4X2 GRID SECTION  -->
   <div class="container grid-page">
     <ul class="row align-items-end">
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-warning">
+      <li class="col-md-6 col-lg-4 col-xl-3">
         <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1625921765718-40e14ee8641c?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1625921765718-40e14ee8641c?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <small>Name of the image here. </small>
         </a>
         </li>
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+      <li class="col-md-6 col-lg-4 col-xl-3">
         <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <small>Name of the image here. </small>
         </a>
         </li>
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-info">
+      <li class="col-md-6 col-lg-4 col-xl-3">
         <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1645045791963-a1af96c24782?q=80&w=2241&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <small>Name of the image here. </small>
-        </a>
-        </li>
-      </li>
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
-        <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1645045791963-a1af96c24782?q=80&w=2241&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <small>Name of the image here. </small>
         </a>
         </li>
       </li>
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+      <li class="col-md-6 col-lg-4 col-xl-3">
         <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1645045791963-a1af96c24782?q=80&w=2241&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <small>Name of the image here. </small>
         </a>
         </li>
       </li>
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+      <li class="col-md-6 col-lg-4 col-xl-3">
         <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1645045791963-a1af96c24782?q=80&w=2241&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <small>Name of the image here. </small>
         </a>
         </li>
       </li>
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+      <li class="col-md-6 col-lg-4 col-xl-3">
         <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <small>Name of the image here. </small>
         </a>
         </li>
       </li>
-      <li class="col-md-6 col-lg-4 col-xl-3 bg-success">
+      <li class="col-md-6 col-lg-4 col-xl-3">
         <a href="">
-          <img class="grid-img-sm img-fluid" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <small>Name of the image here. </small>
+        </a>
+        </li>
+      </li>
+      <li class="col-md-6 col-lg-4 col-xl-3">
+        <a href="">
+          <img class="grid-img-sm img-fluid shadow" src="https://images.unsplash.com/photo-1629119236727-36156dcc0ab0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <small>Name of the image here. </small>
         </a>
         </li>
@@ -183,24 +199,24 @@
 
 
 <!-- CONTACT FORM SECTION  -->
-<div class="container" style="text-align: left;">
+<div class="container border p-5 shadow" style="text-align: left;">
   <h2>CONTACT</h2>
 <form action="#nowereyet">
   <div class="row">
   <div class="form-group col">
     <label for="name">Name</label>
-    <input type="text" class="form-control" name="name" id="name" placeholder="Hey, I'm Sarah, what's your name?">
+    <input type="text" class="form-control " name="name" id="name" placeholder="Hey, I'm Sarah, what's your name?">
   </div>
   <div class="form-group col">
     <label for="email">Email</label>
-    <input type="emil" class="form-control" name="email" id="email" placeholder="What's your email?">
+    <input type="emil" class="form-control " name="email" id="email" placeholder="What's your email?">
   </div>
 </div>
-  <div class="form-floating">
-    <textarea class="form-control" placeholder="comments" id="floatingTextarea2" style="height: 100px"></textarea>
+  <div class="form-floating my-3">
+    <textarea class="form-control " placeholder="comments" id="floatingTextarea2" style="height: 100px"></textarea>
     <label for="floatingTextarea2">Tell me what problem you need solving.</label>
   </div>
-  <button type="button" class="btn btn-dark">Submit</button>
+  <button type="button" class="btn btn-dark ">Submit</button>
 </form>
 </div>
 
