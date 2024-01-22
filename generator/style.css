@@ -198,6 +198,7 @@ nav {
   padding: .5em 2rem;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
 }
 
 nav a {
@@ -284,7 +285,7 @@ nav>ul li ul li>a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 93vh;
+  height: 100vh;
   background-color: white;
   border-bottom: 1px solid #0063A1;
 }
@@ -358,7 +359,7 @@ h1 {
     font-size: 7em;
   }
   .heading{
-    height: 40vh;
+    height: 100vh;
   }
   .heading h2{
     font-size: 3.2em;

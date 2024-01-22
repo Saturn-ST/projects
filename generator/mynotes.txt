@@ -2,6 +2,8 @@ Add some bootstrap to the buttons and form: https://getbootstrap.com/docs/5.3/fo
 
 add a toggle switch 
 
+Make the nabber sticky after welcome
+
 at different sizes add different effects check out lynnandtonic.com for inspiration:
 400% - 
 300% - 
