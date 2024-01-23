@@ -1,0 +1,124 @@
+
+/* COLORS: 
+RED: #FA000D - nav
+ORANGE: #FF6600 - sect-one
+LIGHT ORANGE: #FF8D3A - sect-two
+WHITE: #FFFFFF - sect-three
+PINK: #F24CA6 - sect-four
+DARK PINK: #D44198 - sect-five
+PURPLE: #C2006C - sect-six
+*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+  /* font-family: 'Caveat', cursive; */
+  /* font-family: 'Nunito', sans-serif; */
+
+
+
+body{
+    /* background-color: #FF6600; */
+    font-family: 'Caveat', cursive;
+    color: #fff;
+}
+.sect-one{
+    background-color: #FF6600;
+}
+.sect-two{
+    background-color: #FF8D3A;
+}
+.sect-three{
+    background-color: #FFFFFF;
+    color: #FA000D;
+}
+.sect-four{
+    background-color: #F24CA6;
+}
+.sect-five{
+    background-color: #D44198;
+}
+
+.img-containder{
+    height: 50vw;
+    width: 51vw;
+}
+.img-one{
+    background-image: url('images/img.jpeg');
+    background-size: 100%;
+}
+.img-two{
+    background-image: url('images/img8.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.img-three{
+    background-image: url('images/img9.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.img-four{
+    background-image: url('images/img19.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.img-five{
+    background-image: url('images/img5.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.text-sectioin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blurb h2{
+    /* color: #ea1ec2; */
+    font-weight: 100;
+    font-size: 2.8rem;
+}
+.blurb p{
+    /* color: #f92771; */
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.content{
+    /* margin-bottom: 100px;
+    margin-top: 100px; */
+}
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+#mainNavbar .navbar-brand{
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+#mainNavbar .nav-link{
+    color: #fff;
+}
+#mainNavbar .nav-link:hover{
+    text-decoration: underline;
+}
+span{
+    color: #C2006C;
+}
+#headingGroup h1{
+    font-weight: 100;
+    font-size: 3rem;
+}
+.navbar.scrolled {
+    background: #fa000c;
+    transition: background 500ms;
+}
+@media (max-width: 1200px){
+    body{
+        background-color: #E7688B;
+    } 
+    #headingGroup h1{
+        font-size: 2rem;
+    }
+}
