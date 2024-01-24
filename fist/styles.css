@@ -16,12 +16,12 @@ PURPLE: #C2006C - sect-six
 
 
 body {
-    /* background-color: #FF6600; */
+    background-color: #000;
     font-family: 'Caveat', cursive;
     color: #fff;
 }
 
-.sect-one {
+/* .sect-one {
     background-color: #FF6600;
 }
 
@@ -40,7 +40,7 @@ body {
 
 .sect-five {
     background-color: #D44198;
-}
+} */
 
 .img-container {
     /* height: 96vh;
@@ -48,34 +48,35 @@ body {
     background-repeat: no-repeat;
 }
 
-.img-one {
+/* .img-one {
     background-image: url('images/img.jpeg');
     background-size: 100%;
-}
+    width: 51vw;
+} */
 
-.img-two {
+/* .img-two {
     background-image: url('images/img8.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
-}
+} */
 
-.img-three {
+/* .img-three {
     background-image: url('images/img9.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
-}
+} */
 
-.img-four {
+/* .img-four {
     background-image: url('images/img19.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
-}
+} */
 
-.img-five {
+/* .img-five {
     background-image: url('images/img5.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
-}
+} */
 
 .text-section {
     display: flex;
@@ -121,6 +122,27 @@ body {
 }
 
 span {
+    /* color: #C2006C; */
+}
+#headingGroup h1:first-of-type{
+    color: #FA000D;
+}
+#headingGroup h1:nth-of-type(2){
+    color: #FF6600;
+}
+#headingGroup h1:nth-of-type(3){
+    color: #FF8D3A;
+}
+#headingGroup h1:nth-of-type(4){
+    color: #FFFFFF;
+}
+#headingGroup h1:nth-of-type(5){
+    color: #F24CA6;
+}
+#headingGroup h1:nth-of-type(6){
+    color: #D44198;
+}
+#headingGroup h1:nth-of-type(7){
     color: #C2006C;
 }
 
@@ -163,7 +185,7 @@ span {
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     body {
-        background-color: #E7688B;
+        /* background-color: #E7688B; */
     }
     #headingGroup h1 {
         font-size: 2rem;
