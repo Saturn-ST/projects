@@ -1,4 +1,3 @@
-
 /* COLORS: 
 RED: #FA000D - nav
 ORANGE: #FF6600 - sect-one
@@ -10,115 +9,169 @@ PURPLE: #C2006C - sect-six
 */
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
-  /* font-family: 'Caveat', cursive; */
-  /* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+/* font-family: 'Caveat', cursive; */
+/* font-family: 'Nunito', sans-serif; */
 
 
 
-body{
+body {
     /* background-color: #FF6600; */
     font-family: 'Caveat', cursive;
     color: #fff;
 }
-.sect-one{
+
+.sect-one {
     background-color: #FF6600;
 }
-.sect-two{
+
+.sect-two {
     background-color: #FF8D3A;
 }
-.sect-three{
+
+.sect-three {
     background-color: #FFFFFF;
     color: #FA000D;
 }
-.sect-four{
+
+.sect-four {
     background-color: #F24CA6;
 }
-.sect-five{
+
+.sect-five {
     background-color: #D44198;
 }
 
-.img-containder{
-    height: 50vw;
-    width: 51vw;
+.img-container {
+    /* height: 96vh;
+    width: 51vw; */
+    background-repeat: no-repeat;
 }
-.img-one{
+
+.img-one {
     background-image: url('images/img.jpeg');
     background-size: 100%;
 }
-.img-two{
+
+.img-two {
     background-image: url('images/img8.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.img-three{
+
+.img-three {
     background-image: url('images/img9.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.img-four{
+
+.img-four {
     background-image: url('images/img19.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.img-five{
+
+.img-five {
     background-image: url('images/img5.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.text-sectioin{
+.text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.blurb h2{
+.blurb h2 {
     /* color: #ea1ec2; */
     font-weight: 100;
     font-size: 2.8rem;
 }
-.blurb p{
+
+.blurb p {
     /* color: #f92771; */
     font-weight: 100;
     font-size: 1.5rem;
     line-height: 2;
 }
-.content{
+
+.content {
     /* margin-bottom: 100px;
     margin-top: 100px; */
 }
+
 #mainNavbar {
     font-size: 1.5rem;
     font-weight: 100;
 }
-#mainNavbar .navbar-brand{
+
+#mainNavbar .navbar-brand {
     color: #fff;
     font-size: 1.9rem;
     font-weight: 300;
 }
-#mainNavbar .nav-link{
+
+#mainNavbar .nav-link {
     color: #fff;
 }
-#mainNavbar .nav-link:hover{
+
+#mainNavbar .nav-link:hover {
     text-decoration: underline;
 }
-span{
+
+span {
     color: #C2006C;
 }
-#headingGroup h1{
+
+#headingGroup h1 {
     font-weight: 100;
     font-size: 3rem;
 }
+
 .navbar.scrolled {
     background: #fa000c;
     transition: background 500ms;
 }
-@media (max-width: 1200px){
-    body{
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .img-container {
+        height: 66vh;
+        width: 100vw;
+    }
+    .blurb{
+        padding-top: 2rem;
+    }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .img-container {
+        height: 66vh;
+        width: 100vw;
+    }
+    }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    body {
         background-color: #E7688B;
-    } 
-    #headingGroup h1{
+    }
+    #headingGroup h1 {
         font-size: 2rem;
     }
-}
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    
+ }
+
