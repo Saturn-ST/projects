@@ -21,3 +21,6 @@ Figma Design: https://www.figma.com/file/xAUzlRmBTNxJr0lsqoZsAQ/Figma-basics?typ
 
 Notion Notes: https://www.notion.so/How-To-Write-A-Poem-Website-83cbce3085604846ba43f4bb45dc4a06?pvs=4
 
+colors: https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a-f2cc8f
+
+index.html - the home page without/logging in
