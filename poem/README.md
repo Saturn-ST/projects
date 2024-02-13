@@ -17,5 +17,7 @@ I've made some changes to the concept that include adding a blog, an edit poem s
 - Created responsive information cards to display featured content in the center of the page.
 - Added social media icons.
 
+Figma Design: https://www.figma.com/file/xAUzlRmBTNxJr0lsqoZsAQ/Figma-basics?type=design&node-id=1669-162202&mode=design&t=XtCG76wEuzEkrV5H-0
 
+Notion Notes: https://www.notion.so/How-To-Write-A-Poem-Website-83cbce3085604846ba43f4bb45dc4a06?pvs=4
 

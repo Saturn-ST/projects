@@ -12,49 +12,47 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- BOOTSTRAP NAVBAR SECTION  -->
-    <nav class="navbar navbar-expand-lg container">
+    <!-- BOOTSTRAP NAVBAR SECTION  -->  
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <div class="col d-flex justify-content-start">
+            <!-- <div class="col d-flex justify-content-start"> -->
                 <a class="navbar-brand" href="#">Pantoum</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- </div> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="col">
                     <ul class="navbar-nav d-flex justify-content-end">
                         <li class="nav-item active mx-2">
-                            <a class="nav-link current" href="#">Home</a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Poetic Styles</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">My Poetry</a>
+                            <a class="nav-link" href="#">Courses</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li> -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button class="btn btn-primary btn-login">Log In</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button class="btn btn-primary btn-singup">sign Up</button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +65,7 @@
         <div class="hero">
             <h1><span>Craft</span> and share <span>poetry</span> in a <br> world of endless <span>inspiration</span>.
             </h1>
-            <button type="button" class="btn btn-success">Start Creating</button>
+            <button type="button" class="btn btn-success"><span>Start Creating</span></button>
         </div>
 
     </main>
@@ -110,7 +108,7 @@
 
 
     <footer>
-        <nav class="navbar navbar-expand-lg container">
+        <nav class="navbar navbar-expand-lg container-fluid">
             <div class="container-fluid">
                 <div class="col d-flex justify-content-start">
                     <a class="navbar-brand" href="#">Pantoum</a>
