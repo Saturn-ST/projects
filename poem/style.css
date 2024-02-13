@@ -145,6 +145,36 @@ h1 {
 .fa-brands:active{
     color: #3D405B;
 }
+footer p{
+    font-weight: 300;
+}
+.ft-nav-cont{
+    display: flex;
+    flex-direction: column;
+}
+/* .ft-nav-brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: auto;
+} */
+.ft-nav-brand li{
+    list-style: none;
+}
+/* .ft-nav-links{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: auto;
+} */
+.ft-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: auto;
+}
 
 
 @media (min-width: 576px) {
@@ -173,6 +203,9 @@ h1 {
     .front-pg-card{
         width: 38rem;
     }
+    .ft-nav-brand{
+        width: auto;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -191,4 +224,9 @@ h1 {
     .front-pg-card{
         width: 55rem;
     }
+    .ft-nav-cont{
+        display: flex;
+        flex-direction: row;
+    }
+
 }

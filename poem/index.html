@@ -16,20 +16,23 @@
 </head>
 
 <body>
-    <!-- BOOTSTRAP NAVBAR SECTION  -->  
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-xl container">
         <div class="container-fluid">
-            <!-- <div class="col d-flex justify-content-start"> -->
-                <a class="navbar-brand" href="#">Pantoum</a>
-            <!-- </div> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Pantoum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="col">
-                    <ul class="navbar-nav d-flex justify-content-end">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pantoum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item active mx-2">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Courses</a>
@@ -44,20 +47,19 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <button class="btn btn-primary btn-login">Log In</button>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <button class="btn btn-primary btn-singup">sign Up</button>
-                            </a>
+                            <form class="container-fluid justify-content-start">
+                                <button class="btn btn-success btn-login" type="button">Log In</button>
+                                <button class="btn btn-secondary btn-singup" type="button">sign Up</button>
+                            </form>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- BOOTSTRAP NAVBAR SECTION  -->
+    
 
 
 
@@ -107,34 +109,38 @@
 
 
 
-    <footer>
-        <nav class="navbar navbar-expand-lg container-fluid">
-            <div class="container-fluid">
-                <div class="col d-flex justify-content-start">
-                    <a class="navbar-brand" href="#">Pantoum</a>
-                </div>
-                <div class="col">
-                    <ul class="navbar-nav d-flex justify-content-end">
-                        <li class="nav-item mx-1">
+    <footer class="mx-5">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid ft-nav-cont"> 
+                <ul class="ft-nav-brand">
+                    <li>
+                        <a class="navbar-brand" href="#">Pantoum</a> 
+                    </li>
+                </ul>
+                    <ul class="navbar-nav ft-nav-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Poetic Styles</a>
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">My Poetry</a>
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Courses</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav d-flex justify-content-end">
+                    <ul class="navbar-nav ft-socials">
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#"><i class="fa-brands fa-mastodon"></i></a>
                         </li>
@@ -148,11 +154,10 @@
                             <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
                         </li>
                     </ul>
-                </div>
             </div>
             </div>
         </nav>
-        <p>copyright 2024 Sarah Turner</p>
+        <p>Made by Sarah Turner with <i class="fa-solid fa-heart"></i></p>
 
     </footer>
 
