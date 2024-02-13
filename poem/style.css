@@ -3,7 +3,7 @@
 body{
     font-family: 'Libre Baskerville', serif;
     /* background-image: linear-gradient(rgba(51, 51, 49, 0.1), rgba(1, 180, 235, 0.5)), url("https://images.unsplash.com/photo-1610448721583-d6cb481c9613?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-    background-image: linear-gradient(rgba(51, 51, 49, 0.1), rgba(1, 180, 235, 0.5)), url("https://source.unsplash.com/random");
+    /* background-image: linear-gradient(rgba(51, 51, 49, 0.1), rgba(1, 180, 235, 0.5)), url("https://source.unsplash.com/random"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,46 +21,46 @@ body{
     color: #000;
     font-weight: 100;
 }
-.body-section .navbar, .body-section-profile .navbar{
+/* .body-section .navbar, .body-section-profile .navbar{
     font-size: 1.1rem;
     padding-top: 2rem;
-}
+} */
 
 /* NAVIGATION BAR SECTION  */
-.navbar{
+/* .navbar{
     margin: 0 auto;
     padding: 2rem auto 8rem;
     width: 80%;
     display: flex;
     justify-content: space-between;
-    /* text-shadow: .5px .5px .5px #1417df; */
+    text-shadow: .5px .5px .5px #1417df;
     font-size: 1.3rem;
-}
-.navbar a{
+} */
+/* .navbar a{
     color: inherit;
     text-decoration: none;
-}
-.navbar a:hover{
+} */
+/* .navbar a:hover{
     text-shadow: .5px .5px .5px #d9ff04;
-}
-.navbar a:active{
+} */
+/* .navbar a:active{
     text-shadow: .5px .5px .5px #04ff3f;
-}
-.navbar ul:nth-of-type(1){
+} */
+/* .navbar ul:nth-of-type(1){
     display: flex;
     list-style: none;
     padding: 0;
-}
-.navbar ul:nth-of-type(2){
+} */
+/* .navbar ul:nth-of-type(2){
     display: flex;
     list-style: none;
     gap: 2rem;
     padding: 0 1rem .5rem 1rem;
     border-bottom: 1px solid #fff;
-}
-.empty{
+} */
+/* .empty{
     height: 80vh;
-}
+} */
 
 /* NAME AND YEAR SECTION  */
 .name-form{

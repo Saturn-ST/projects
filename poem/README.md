@@ -7,3 +7,5 @@ Profile page shows your own poems.
 
 Created starter html and css. Will continue to add as my skills improve. 
 
+I've made some changes to the concept that include adding a blog, an edit poem section and more. 
+
