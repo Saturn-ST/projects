@@ -1,3 +1,0 @@
-Consider turning the 3X grid into cards: https://getbootstrap.com/docs/5.3/components/card/#about
-
-TURN THE 4X2 GRID INTO A CAROUSEL: https://getbootstrap.com/docs/5.3/components/carousel/#how-it-works
