@@ -11,7 +11,6 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
@@ -30,6 +29,7 @@ li {
 
 a {
     text-decoration: none;
+    padding: 0;
 }
 
 /* ICONS SECTION  */
@@ -41,8 +41,7 @@ i:hover, .replit-icon:hover{
     transform-origin: center;
 
 }
-
-.fa-codepen, .fa-linkedin-in, .fa-copyright {
+.fa-codepen, .fa-linkedin-in {
     color: #32A9A2;
 }
 .fa-github-alt {
@@ -89,7 +88,7 @@ i:hover, .replit-icon:hover{
     transform-origin: center;
   }
   .icon-cont.coffee:hover {
-    background-image: url('images/bmc.png');
+    background-image: url('images/bmc-logo-no-background.png');
     background-size: contain;
     background-repeat: no-repeat;
     transform: rotate(360deg);
@@ -109,9 +108,6 @@ i:hover, .replit-icon:hover{
     transform: rotate(360deg);
     transform-origin: center;
   }
-
-
-
 .i-bg {
     background-color: white;
     width: .9rem;
@@ -122,7 +118,7 @@ i:hover, .replit-icon:hover{
     justify-content: center;
     margin: 1rem auto;
     transform: translate(8.2rem, -3.9em);
-    box-shadow: 5px 4px 4px rgb(0, 0, 0, .25);
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.061);
 }
 
 .fa-circle-info {
@@ -148,12 +144,9 @@ i:hover, .replit-icon:hover{
     transform: translate(0, 3em);
 }
 
-h1, .ft-sect h2 {
+h1, footer h2 {
     font-weight: 300;
     margin: 0;
-    /* width: 17rem; */
-    /* text-decoration-color: linear-gradient(to right, #f21edc, #018C7F); */
-    /* box-shadow: 3px 3px 3px linear-gradient(to right, #f21edc, #018C7F); */
 }
 
 .background-bg {
@@ -188,7 +181,6 @@ h1, .ft-sect h2 {
     border-radius: 50%;
     transform: rotate(35deg);
     transform-origin: center;
-
   }
 
 .hero ul {
@@ -201,39 +193,34 @@ h1, .ft-sect h2 {
     font-size: 1.3rem;
 }
 
-
-
-
-
-
 /* THOUGHT TITLE SECTION  */
 .title-cont-cont{
     background: linear-gradient(0.25turn, #FFCC66, #FF6B6B);
-    padding: 1px;
-    margin: auto;
-    width: 60%;
+    padding: .9px;
+    margin: 4em auto 0;
+    width: 63%;
+    border-radius: .25em;
     box-shadow: 5px 4px 4px #F5F5F5;
-
 }
 .thought-title-cont{
-    /* border: 2px solid #FFCC66; */
-    padding: 1.5rem 1rem 2em;
+    padding: 1.5rem 1rem 3em;
     margin: auto;
     background-color: #fff;
+    border-radius: .25em;
 }
 .thought-title-cont h2, .thought-title-cont h3{
-  background: -webkit-linear-gradient(0.8turn, #FFCC66, #FF6B6B);
+  background: -webkit-linear-gradient(0.8turn, #FFCC66, #FF6B6B, #FF6B6B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
 }
 .thought-title-cont h2{
     font-size: 3rem;
-    font-weight: 300;
-    padding-bottom: 1rem;
+    font-weight: 400;
+    padding-bottom: .5rem;
 }
 .thought-title-cont h3{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* THOUGHT CONTENTS SECTION */
@@ -247,23 +234,25 @@ h1, .ft-sect h2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 60%;
+    width: 65%;
     margin: 1rem auto 2.5rem;
     text-align: left;
 }
 .thoughts-article h4{
     color: #32A9A2;
     font-size: 1rem;
+    font-weight: 600;
 }
 .thoughts-article h3{
     font-size: 1rem;
+    font-weight: 600;
 }
 .thoughts-article div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 50%;
+    width: 60%;
 }
 .thoughts-article p{
     font-size: .7em;
@@ -280,8 +269,36 @@ footer div{
     background-color: #fff;
 }
 footer div h2{
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
+
+/* NAVIGATION SECTION  */
+.nav-link.underline {
+    position: relative; /* Establish a positioning context for pseudo-elements */
+    background-color: #fff;
+    padding: 0;
+    color: #3D405B;
+    font-weight: 300;
+    display: inline-block; /* Ensure the pseudo-element aligns correctly under the text */
+}
+
+.nav-link.underline::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    bottom: 0; /* Align at the bottom of the .nav-link */
+    left: 0;
+    right: 0;
+    height: 1px; /* Height of the underline */
+    background: linear-gradient(90deg, #FFCC66, #FF6B6B, #32A9A2); /* Gradient for the underline */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for the hover effect */
+}
+
+.nav-link.underline:hover::after {
+    opacity: 1; /* Make the underline visible on hover */
+}
+
 
 
 
