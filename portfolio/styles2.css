@@ -1,0 +1,114 @@
+/* font-family: "Poppins", sans-serif;
+    font-weight: 100-900, 100-900;
+    font-style: normal, italic;
+    Green: #32A9A2
+   Yellow: #FFCC66
+   Red: #FF6B6B 
+   Gray: #F5F5F5
+   Black: #3D405B*/
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    color: #3D405B;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.i-bg {
+    background-color: white;
+    width: .9rem;
+    height: .9rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    transform: translate(8.2rem, -3.9em);
+    box-shadow: 5px 4px 4px rgb(0, 0, 0, .25);
+}
+
+.fa-circle-info {
+    color: #FFCC66;
+    font-size: 1rem;
+}
+
+.hero {
+    margin-top: 5em;
+}
+
+.h1-bg {
+    background: linear-gradient(0.25turn, #FFCC66, #FF6B6B, #32A9A2);
+    height: 195pt;
+    width: 16em;
+    height: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transform: translate(0, 3em);
+
+}
+
+h1 {
+    font-weight: 300;
+    margin: 0;
+    /* width: 17rem; */
+    /* text-decoration-color: linear-gradient(to right, #f21edc, #018C7F); */
+    /* box-shadow: 3px 3px 3px linear-gradient(to right, #f21edc, #018C7F); */
+}
+
+.background-bg {
+    background: linear-gradient(0.25turn, #FFCC66, #FF6B6B, #32A9A2);
+    height: 195pt;
+    width: 195pt;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.profile-img {
+    background-image: url("images/profile-pic.png");
+    height: 190pt;
+    width: 190pt;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero ul li:first-child a i {
+    color: #FFCC66;
+}
+
+.hero ul li:nth-child(2) a i {
+    color: #FF6B6B;
+}
+
+.hero ul li:last-child a i {
+    color: #32A9A2;
+}

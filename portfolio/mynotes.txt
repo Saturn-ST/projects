@@ -1,3 +1,7 @@
+2/16/24:
+I redesigned the site using Figma: https://www.figma.com/file/Rc83fEV0J4A9EbR03bSZN7/My-portfolio?type=design&mode=design&t=ZyL4ar8SwMNtg1ti-0
+Do over the design, decide which projects go on the main page and which ones go in the Thoughts page then add the information to the design before writing the code.
+
 1/18/24: 
 How cool would it be to have a working prototype of the website I'm showing on my website. 
 i.e. I'm scrolling through my profile and come across the grid of projects
