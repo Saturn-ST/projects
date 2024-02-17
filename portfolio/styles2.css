@@ -9,6 +9,7 @@
 html {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,6 +32,86 @@ a {
     text-decoration: none;
 }
 
+/* ICONS SECTION  */
+i, .replit-icon{
+    transition: 1s;
+}
+i:hover, .replit-icon:hover{
+    transform: rotate(-360deg);
+    transform-origin: center;
+
+}
+
+.fa-codepen, .fa-linkedin-in, .fa-copyright {
+    color: #32A9A2;
+}
+.fa-github-alt {
+    color: hwb(40 40% 0%);
+}
+
+.fa-instagram {
+    color: #FF6B6B;
+}
+
+.icon-cont.insta, .icon-cont.github, .icon-cont.codepen, .icon-cont.coffee,  .icon-cont.replit, .icon-cont.linkedin {
+    width: 2rem; 
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  .icon-cont.insta:hover i, .icon-cont.github:hover i, .icon-cont.codepen:hover i, .icon-cont.coffee:hover img,  .icon-cont.replit:hover img, .icon-cont.linkedin:hover i {
+    display: none;
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+  .icon-cont.insta:hover {
+    background-image: url('https://static-00.iconduck.com/assets.00/instagram-icon-1024x1024-8qt57uwd.png'); /* Path to your PNG image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    transform-origin: center;
+    transform-origin: center;
+  }
+  .icon-cont.github:hover {
+    background-image: url('images/githubHead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+  .icon-cont.codepen:hover {
+    background-image: url('images/codepen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+  .icon-cont.coffee:hover {
+    background-image: url('images/bmc.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+  .icon-cont.replit:hover {
+    background-image: url('images/Replit_Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+  .icon-cont.linkedin:hover {
+    background-image: url('images/linkedin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+
+
+
 .i-bg {
     background-color: white;
     width: .9rem;
@@ -49,6 +130,8 @@ a {
     font-size: 1rem;
 }
 
+
+/* HERO SECTION  */
 .hero {
     margin-top: 5em;
 }
@@ -57,16 +140,15 @@ a {
     background: linear-gradient(0.25turn, #FFCC66, #FF6B6B, #32A9A2);
     height: 195pt;
     width: 16em;
-    height: 1.5px;
+    height: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     transform: translate(0, 3em);
-
 }
 
-h1 {
+h1, .ft-sect h2 {
     font-weight: 300;
     margin: 0;
     /* width: 17rem; */
@@ -76,23 +158,38 @@ h1 {
 
 .background-bg {
     background: linear-gradient(0.25turn, #FFCC66, #FF6B6B, #32A9A2);
-    height: 195pt;
-    width: 195pt;
+    height: 192pt;
+    width: 192pt;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem auto;
 }
-
 .profile-img {
     background-image: url("images/profile-pic.png");
     height: 190pt;
     width: 190pt;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    background-position: center;
     background-size: 100%;
-}
+    transition: all 1.5s ease-in-out;
+  }
+  
+  .profile-img:hover {
+    background-image: url("images/profilePic.jpg");
+    aspect-ratio: 1 / 1;
+    background-position: left;
+    background-size: 120%;
+    border-radius: 50%;
+    transform: rotate(35deg);
+    transform-origin: center;
+
+  }
 
 .hero ul {
     display: flex;
@@ -100,15 +197,92 @@ h1 {
     align-items: center;
     gap: 2rem;
 }
-
-.hero ul li:first-child a i {
-    color: #FFCC66;
+.hero ul li, footer ul li i{
+    font-size: 1.3rem;
 }
 
-.hero ul li:nth-child(2) a i {
-    color: #FF6B6B;
+
+
+
+
+
+/* THOUGHT TITLE SECTION  */
+.title-cont-cont{
+    background: linear-gradient(0.25turn, #FFCC66, #FF6B6B);
+    padding: 1px;
+    margin: auto;
+    width: 60%;
+    box-shadow: 5px 4px 4px #F5F5F5;
+
+}
+.thought-title-cont{
+    /* border: 2px solid #FFCC66; */
+    padding: 1.5rem 1rem 2em;
+    margin: auto;
+    background-color: #fff;
+}
+.thought-title-cont h2, .thought-title-cont h3{
+  background: -webkit-linear-gradient(0.8turn, #FFCC66, #FF6B6B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.thought-title-cont h2{
+    font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.thought-title-cont h3{
+    font-size: 1rem;
 }
 
-.hero ul li:last-child a i {
+/* THOUGHT CONTENTS SECTION */
+.thoughts-sect{
+    margin: 2em auto 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thoughts-article{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    margin: 1rem auto 2.5rem;
+    text-align: left;
+}
+.thoughts-article h4{
     color: #32A9A2;
+    font-size: 1rem;
 }
+.thoughts-article h3{
+    font-size: 1rem;
+}
+.thoughts-article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+}
+.thoughts-article p{
+    font-size: .7em;
+    font-weight: 400;
+}
+
+
+/* FOOTER SECTION  */
+footer{
+    background: linear-gradient(0.25turn, #FFCC66, #FF6B6B, #32A9A2);
+    padding-top: 2px;
+}
+footer div{
+    background-color: #fff;
+}
+footer div h2{
+    padding-top: 1rem;
+}
+
+
+
+
