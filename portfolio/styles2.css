@@ -32,6 +32,7 @@ li {
 a {
     text-decoration: none;
     padding: 0;
+    color: inherit;
 }
 
 /* ICONS SECTION  */
@@ -45,6 +46,9 @@ i:hover,
     transform: rotate(-360deg);
     transform-origin: center;
 
+}
+.icon-cont.github.top .fa-github-alt, .icon-cont.insta.top .fa-instagram, .icon-cont.codepen.top .fa-codepen{
+    color: #3D405B;
 }
 
 .fa-codepen,
@@ -238,7 +242,7 @@ footer ul li i {
 /* THOUGHT, & PROJECTS TITLE SECTION  */
 .title-cont-cont,
 .proj-cont-cont {
-    background: linear-gradient(0.25turn, #FFCC66, #FF6B6B);
+    background: linear-gradient(0.25turn, #FFCC66, #FF6B6B, #32A9A2);
     padding: 1px;
     margin: 1.5em auto 0;
     width: 63%;
@@ -279,7 +283,9 @@ margin: 0;
 }
 
 .title-cont-cont.proj {
+    /* background: linear-gradient(rgba(255, 204, 102, .80), rgba(255, 107, 107, .80,) rgba(50, 169, 162, .80))); */
     background: linear-gradient(0.25turn, rgba(255, 204, 102, .80), rgba(255, 107, 107, .80));
+    
     margin: 4em auto 0;
     width: 63%;
     border-radius: .25em;
