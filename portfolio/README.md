@@ -20,3 +20,4 @@ Updates to index.html
         projects in progress
         contact form
         css animations
+        ![portfolio page](image.png)
